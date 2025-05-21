@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ミュゼットとネコ耳の歩兵隊-ストーリー-</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="loadingOverlay"></div>
+    <main>
+        <section id="hero2" class="">
+            <div class="hero_inner2">
+                <h1 class="storyHeading">―ストーリー―</h1>
+                <p>戦乱の世は終わりを告げ、世界は平穏を見せたかに思えた。</p>
+                <p>しかし、その安定を崩す者が現れた。</p>
+                <p>
+                    <font color="#f5b1aa">＜フレクタリア帝国＞</font>
+                </p>
+                <p>かつての英雄の国であり、現在の小国の一つであったその国は、</p>
+                <p>突然の宣戦布告と共に、他国を飲み込んでいった。</p>
+                <p>世界は<font color="#f5b1aa">＜フレクタリア連合＞</font>と<font color="#66CDAA">＜防壁同盟＞</font>に二分されたのであった。</p>
+                <p>そして、戦場から遠く離れた国<font color="#66CDAA">＜エシュタルベルク＞。</font>
+                </p>
+                <p>歩兵連隊を率いる<font color="#66CDAA">＜ミュゼット＞</font>は、演習のために西部にいた。</p>
+                <p>国境沿いでの火災の報告を受けたミュゼット隊は、</p>
+                <p>緊迫するフレクタリア情勢の中、西の国境へと向かう……</p>
+            </div>
+            <div class="hero2Image2  hidden">
+                <img src="./images/ミュゼット3.png" alt="ミュゼット" class="hero2Image">
+            </div>
+        </section>
+        <section>
+            <h2 class="forceHeading">―勢力図―</h2>
+            <div class="map-container">
+                <img src="./images/map.jpg" class="Map">
+                <div class="Country esh"><button onclick="showInfo('esh',event);">エシュタルベルク王国</button></div>
+                <div class="Country swa"><button onclick="showInfo('swa',event);">スワールランド共和国</button></div>
+                <div class="Country ruman"><button onclick="showInfo('ruman',event);">ルーマン＝ケルピッツ連邦</button></div>
+                <div class="Country ber"><button onclick="showInfo('ber',event);">ベルッセン大公国</button></div>
+                <div class="Country fle"><button onclick="showInfo('fle',event);">フレクタリア帝国</button></div>
+                <div class="Country habi"><button onclick="showInfo('habi',event);">ハビラ帝国</button></div>
+                <div class="Country vix"><button onclick="showInfo('vix',event);">ビクシニア王国</button></div>
+                <div id="infoBox">
+                    <button onclick="hideInfo()">✕</button>
+                    <div id="infoContent3"></div>
+                    <div id="infoContent2"></div>
+                    <div id="infoContent"></div>
+                    <div id="infoContent2_2"></div>
+                    <div id="infoContent4"></div>
+                    <img src="" id="infoCharacter" alt="兵士" style="width:200px;">
+                </div>
+            </div>
+        </section>
+        <section id="termSection">
+            <h2 class="forceHeading">―用語図鑑―</h2>
+            <div class="termContainer">
+                <nav>
+                    <ul class="term-menu">
+                        <li class="menu-wrapper">
+                            <div class="menu-item" data-group="az">英数</div>
+                        </li>
+                        <li class="menu-wrapper">
+                            <div class="menu-item" data-group="a">あ行</div>
+                        </li>
+                        <li class="menu-wrapper">
+                            <div class="menu-item" data-group="ka">か行</div>
+                        </li>
+                        <li class="menu-wrapper">
+                            <div class="menu-item" data-group="sa">さ行</div>
+                        </li>
+                        <li class="menu-wrapper">
+                            <div class="menu-item" data-group="ta">た行</div>
+                        </li>
+                        <li class="menu-wrapper">
+                            <div class="menu-item" data-group="na">な行</div>
+                        </li>
+                        <li class="menu-wrapper">
+                            <div class="menu-item" data-group="ha">は行</div>
+                        </li>
+                        <li class="menu-wrapper">
+                            <div class="menu-item" data-group="ma">ま行</div>
+                        </li>
+                        <li class="menu-wrapper">
+                            <div class="menu-item" data-group="ya">や行</div>
+                        </li>
+                        <li class="menu-wrapper">
+                            <div class="menu-item" data-group="ra">ら行</div>
+                        </li>
+                        <li class="menu-wrapper">
+                            <div class="menu-item" data-group="wa">わ行</div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="term-group " data-group="az">
+                    <button class="term-button" data-term="FK" onclick="showTerm()">FK.</button>
+                    <button class="term-button" data-term="GebK" onclick="showTerm()">GebK.</button>
+                    <button class="term-button" data-term="Gew" onclick="showTerm()">Gew.</button>
+                    <button class="term-button" data-term="Kar" onclick="showTerm()">Kar.</button>
+                    <button class="term-button" data-term="Lmg" onclick="showTerm()">Lmg.</button>
+                    <button class="term-button" data-term="MG" onclick="showTerm()">MG.</button>
+                    <button class="term-button" data-term="MP" onclick="showTerm()">MP.</button>
+                    <button class="term-button" data-term="P" onclick="showTerm()">P.</button>
+                    <button class="term-button" data-term="PK" onclick="showTerm()">PK.</button>
+                    <button class="term-button" data-term="R" onclick="showTerm()">R.</button>
+                    <button class="term-button" data-term="SG" onclick="showTerm()">SG.</button>
+                    <button class="term-button" data-term="ZF" onclick="showTerm()">/ZF</button>
+                </div>
+                <div class="term-group " data-group="a">
+                    <button class="term-button" data-term="esh" onclick="showTerm()">エシュター</button>
+                </div>
+                <div class="term-group " data-group="ka">
+                    <button class="term-button" data-term="kes" onclick="showTerm()">ケストレル</button>
+                    <button class="term-button" data-term="air" onclick="showTerm()">航空騎兵</button>
+                </div>
+                <div class="term-group " data-group="ta">
+                    <button class="term-button" data-term="dwa" onclick="showTerm()">ドワーフ</button>
+                </div>
+                <div class="term-group " data-group="na">
+                    <button class="term-button" data-term="noi" onclick="showTerm()">ノイ</button>
+                </div>
+                <div class="term-group " data-group="ha">
+                    <button class="term-button" data-term="man" onclick="showTerm()">ヒト属</button>
+                    <button class="term-button" data-term="farn" onclick="showTerm()">ファーンアロー海峡</button>
+                    <button class="term-button" data-term="pri" onclick="showTerm()">プリンチペ・ディ・アメティースト</button>
+                </div>
+                <div class="term-group " data-group="ma">
+                    <button class="term-button" data-term="mis" onclick="showTerm()">ミステール</button>
+                    <button class="term-button" data-term="muh" onclick="showTerm()">ムフロン</button>
+                </div>
+                <div class="term-group " data-group="ya">
+                    <button class="term-button" data-term="dra" onclick="showTerm()">翼竜</button>
+                </div>
+                <div class="term-group " data-group="ra">
+                    <button class="term-button" data-term="ruman_war" onclick="showTerm()">ルーマン戦争</button>
+                    <button class="term-button" data-term="leo" onclick="showTerm()">レオ</button>
+                    <button class="term-button" data-term="row" onclick="showTerm()">ローホッグ</button>
+                </div>
+
+                <div class="term" data-term="FK" style="display: none;">
+                    <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
+                            alt="戻る"></button>
+                    <div class="term-title">
+                        <h3>FK.</h3>
+                    </div>
+                    <img src="./images/FK_icon.png" class="term-icon">
+                    <div class="definition">
+                        <p>FK.はFeldkanone（フェルトカノーネ）の略称であり、エシュタルベルク軍の兵器区分で"野砲"を意味する。<!--
+                                -->エシュタルベルク軍は機動性を重視した比較的小口径の大砲を野砲と定義しており、要塞砲などと比べると口径は控えめである。<!--
+                                -->現在は後装式かつ駐退機の装備された砲が主流である。</p>
+                    </div>
+                    <div class="term-charaBase-Win">
+                        <div class="term-charaBase">
+                            <img src="./images/Lahti.png" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「駐退機を備えた野砲は、我が国スワールランドが開発した新時代の兵器さ！<!--
+                                -->連射が効くから"速射砲"とも呼ぶんだよ」</p>
+                            </div>
+                        </div>
+                        <div class="term-charaBase">
+                            <img src="./images/Musette.png" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「我がエシュタルベルクのFK.1もスワールランド製だな」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="term" data-term="GebK" style="display: none;">
+                    <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
+                            alt="戻る"></button>
+                    <div class="term-title">
+                        <h3>GebK.</h3>
+                    </div>
+                    <img src="./images/GebK_icon.png" class="term-icon">
+                    <div class="definition">
+                        <p>GebK.はGebirgskanone（ゲビルクスカノーネ）の略称であり、エシュタルベルク軍の兵器区分で"山砲"を意味する。<!--
+                                -->山砲とは山岳地帯で運用する事を目的とした大砲であり、小型・軽量で分解して運搬することが容易という特徴がある。<!--
+                                -->山岳部隊の戦略の中核を担う兵器である。</p>
+                    </div>
+                    <div class="term-charaBase-Win">
+                        <div class="term-charaBase">
+                            <img src="./images/Pino.png" alt="ピーノ" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「山砲を装備している時は取り回しの良い騎兵銃が相性良いんだぜ！」</p><!--
+                                -->
+                            </div>
+                        </div>
+                        <div class="term-charaBase">
+                            <img src="./images/Musette.png" alt="ミュゼット" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「我が国の山岳兵もルーマンケルピッツと同じ山砲を装備しているな」</p><!--
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="term" data-term="Gew" style="display: none;">
+                    <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"></button>
+                    <div class="term-title">
+                        <h3>Gew.</h3>
+                    </div>
+                    <img src="./images/GewIcon.png" alt="歩兵銃" class="term-icon">
+                    <div class="definition">
+                        <p>Gew.はGewehr（ゲヴェーア）の略称であり、エシュタルベルク軍の兵器区分で"歩兵銃"を意味する。<!--
+                                -->高威力・長射程・確実な動作、そして誰でも扱える整備性が求められる基本装備である。構造は主に手動装填式であり5～10発の弾薬が装填可能な連発銃だが、<!--
+                                -->その仕様や動作方式は各国の運用思想によって異なる。</p>
+                    </div>
+                    <div class="term-charaBase-Win">
+                        <div class="term-charaBase">
+                            <img src="./images/Musette.png" alt="ミュゼット" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「歩兵隊にとって大事な武器だ！やはり威力を高めねばな！」</p>
+                            </div>
+                        </div>
+                        <div class="term-charaBase">
+                            <img src="./images/Craine.png" alt="クレイン" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「強いだけの武器は良い兵器に成り得ないってスタンリーさん言ってましたよ」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="term" data-term="Kar" style="display: none;">
+                    <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
+                            alt="戻る"></button>
+                    <div class="term-title">
+                        <h3>Kar.</h3>
+                    </div>
+                    <img src="./images/Kar_icon.png" alt="騎兵銃" class="term-icon">
+                    <div class="definition">
+                        <p>Kar.はKarabiner（カラビナー）の略称であり、エシュタルベルク軍の兵器区分で"騎兵銃"を意味する。<!--
+                                -->馬上で扱いやすいよう、全長が短めに作られた小銃である。基本的に既存の歩兵銃を改造したものが多い。<!--
+                                -->その取り回しの良さから、騎兵だけでなく砲兵などの後方部隊が運用することも多い銃である。</p>
+                    </div>
+                    <div class="term-charaBase-Win">
+                        <div class="term-charaBase">
+                            <img src="./images/Erik.png" alt="エリク" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「ボルトハンドルが曲げられたり、負い紐が側面に付いたり、<!--
+                                -->引っ掛かりを極力無くしてあるのさ！」</p>
+                            </div>
+                        </div>
+                        <div class="term-charaBase">
+                            <img src="./images/Lahti.png" alt="ラティ" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「アタシら砲兵も使ってるけど、歩兵銃を簡略化した物だから<!--
+                                -->ちょっと使いづらいんだよね…」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="term" data-term="PK" style="display: none;">
+                    <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
+                            alt="戻る"></button>
+                    <div class="term-title">
+                        <h3>PK.</h3>
+                    </div>
+                    <img src="./images/PK_icon.png" alt="ピストルカービン" class="term-icon">
+                    <div class="definition">
+                        <p>PK.はPistolenkarabiner（ピストレンカラビナー）の略称であり、エシュタルベルク軍の兵器区分で"ピストルカービン"を意味する。<!--
+                                -->エシュタルベルク軍では、ピストル弾またはそれに準ずる小型の弾薬を使用する小銃と定義されており、短機関銃は含まれず、ピストルの発展型とは限られない。<!--
+                                -->主に衛生兵や偵察兵などの自衛用として支給されている。</p>
+                    </div>
+                    <div class="term-charaBase-Win">
+                        <div class="term-charaBase">
+                            <img src="./images/Musette.png" alt="ミュゼット" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「ピストル弾を使用しているから衛生兵のような非戦闘員でも<!--
+                                -->撃ちやすいと評判だな」</p>
+                            </div>
+                        </div>
+                        <div class="term-charaBase">
+                            <img src="./images/Craine.png" alt="クレイン" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「自動装填式は構造が複雑なので、<!--
+                                -->この子の整備は私少し苦手です…」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="term" data-term="PK" style="display: none;">
+                    <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
+                            alt="戻る"></button>
+                    <div class="term-title">
+                        <h3>PK.</h3>
+                    </div>
+                    <img src="./images/PK_icon.png" alt="ピストルカービン" class="term-icon">
+                    <div class="definition">
+                        <p>PK.はPistolenkarabiner（ピストレンカラビナー）の略称であり、エシュタルベルク軍の兵器区分で"ピストルカービン"を意味する。<!--
+                                -->エシュタルベルク軍では、ピストル弾またはそれに準ずる小型の弾薬を使用する小銃と定義されており、短機関銃は含まれず、ピストルの発展型とは限られない。<!--
+                                -->主に衛生兵や偵察兵などの自衛用として支給されている。</p>
+                    </div>
+                    <div class="term-charaBase-Win">
+                        <div class="term-charaBase">
+                            <img src="./images/Musette.png" alt="ミュゼット" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「ピストル弾を使用しているから衛生兵のような非戦闘員でも<!--
+                                -->撃ちやすいと評判だな」</p>
+                            </div>
+                        </div>
+                        <div class="term-charaBase">
+                            <img src="./images/Craine.png" alt="クレイン" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「自動装填式は構造が複雑なので、<!--
+                                -->この子の整備は私少し苦手です…」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="term" data-term="ZF" style="display: none;">
+                    <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
+                            alt="戻る"></button>
+                    <div class="term-title">
+                        <h3>/ZF</h3>
+                    </div>
+                    <img src="./images/ZF_icon.png" class="term-icon">
+                    <div class="definition">
+                        <p>ZFはZielfernrohr（ツィールフェルンローア）の略称であり、望遠照準器（ライフルスコープ）を意味する。<!--
+                                -->エシュタルベルク軍はスコープを搭載した小銃を狙撃銃として運用していなかったが、同盟国であるルーマンケルピッツの要請で<!--
+                                -->応急的に正式名称が整備された。例として「Gew.1/ZF」は「スコープ搭載Gew.1狙撃銃」を意味する。</p>
+                    </div>
+                    <div class="term-charaBase-Win">
+                        <div class="term-charaBase">
+                            <img src="./images/Beryl.png" alt="ベリル" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「あまり…いじらないで…<!--
+                                -->照準の調整…大変なので…」</p>
+                            </div>
+                        </div>
+                        <div class="term-charaBase">
+                            <img src="./images/Musette.png" alt="ミュゼット" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「小銃にこんな精密機器を乗っけるのか…？<!--
+                                -->」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const infoBox = document.getElementById('infoBox');
+            function showInfo(countryCode, event) {
+                event.preventDefault();
+                const descriptions = {
+                    esh: "エシュタルベルク王国",
+                    swa: "スワールランド共和国",
+                    ruman: "ルーマン＝ケルピッツ連邦",
+                    ber: "ベルッセン大公国",
+                    fle: "フレクタリア帝国",
+                    habi: "ハビラ帝国",
+                    vix: "ビクシニア王国"
+                };
+                const descriptions2 = {
+                    esh: "ESHTALBERG",
+                    swa: "SWIRLLAND",
+                    ruman: "RUMAN-KERPIZZ",
+                    ber: "BERSSEN",
+                    fle: "FLEKTALIA",
+                    habi: "HABIRA",
+                    vix: "VIXINIA"
+                }
+                const descriptions2_2 = {
+                    esh: "首都：ザムトフォーテ",
+                    swa: "首都：クインベル",
+                    ruman: "首都：ウンディーナ",
+                    ber: "首都：エフィールブルグ",
+                    fle: "首都：ベレロワ",
+                    habi: "首都：アルミラージュ",
+                    vix: "首都：エドゥアリア"
+                }
+                const descriptions3 = {
+                    esh: "防壁同盟",
+                    swa: "防壁同盟",
+                    ruman: "防壁同盟",
+                    ber: "防壁同盟",
+                    fle: "フレクタリア連合",
+                    habi: "フレクタリア連合",
+                    vix: "フレクタリア連合"
+                }
+                const descriptions4 = {
+                    esh: `ネコ型の獣人「エシュター」が暮らす小さな山岳国家。<br/>国の規模に対して軍事力が高く、自国生産の兵器が多い。
+                    過去の戦争でルーマンケルピッツと対峙し、その際はベルッセンの後ろ盾に助けられた。軍事力の高さもその戦争の名残である。現在は両者とも切り離せないパートナー。現国王は国民人気が高い。`,
+                    swa: `ウサギ型の獣人「ドワーフ」が暮らす、工業の国。<br/>その工業力の高さからフレクタリアに狙われており、領土内で戦闘が続いてる。
+                    この地方では珍しい共和制の大国であり、自由が尊重される傾向がある。多くの国に兵器を輸出しており、防壁同盟だけでなくフレクタリア連合側も鹵獲、コピーして使用している。`,
+                    ruman: `ヤギのような角を持つ種族「ムフロン」が暮らす国。<br/>強大な海軍を有する「ルーマン」と、難攻不落の山岳国家「ケルピッツ」から成る連邦国家。
+                    屈指の大国であり、対フレクタリア軍事同盟「防壁同盟」の中心国となっている。しかし、過去に大陸全土を巻き込んだ侵略戦争を起こしており、周辺国からの不信感は拭えない。`,
+                    ber: `古くから翼竜の産地として知られている、軍事国家。<br/>翼竜の騎兵「航空騎兵」を使い国土を広げた歴史から、現在でも大国として君臨している。
+                    過去にルーマンケルピッツと大規模な戦争を起こしており、この両者は現在でも溝が深い。港を求めて隣国に圧力をかけているが、ルーマンケルピッツの策略に阻止されている。`,
+                    fle: `戦争の元凶であり、フレクタリア連合の中心国。<br/>エシュタルベルクと大差のない小国だが、現皇帝が即位してからは軍拡の一途を辿っている。
+                    いわゆる“普通の人間”と呼ばれる種族「ノイ」の国だが、様々な種族を引き入れ、戦力としている。小国故の兵器不足から、他国兵器も多く鹵獲し運用している。`,
+                    habi: `大陸西部の乾燥地帯に位置する国。ライオン型の原始的な種族「レオ」が多く暮らしている。<br/>海軍が強力な国として知られ、ルーマンケルピッツとの衝突が多い歴史がある。
+                    フレクタリアとは仮想敵国の関係だったが、現在は利害の一致で軍事同盟を結んでいる。`,
+                    vix: `ベルッセンと並ぶ航空騎兵の国。<br/>フレクタリア・ハビラ連合軍に攻め落とされ、現在はフレクタリア連合の一国となっている。
+                    他国と比べて伝統的な文化を重んじる傾向にあり、軍装や装備などに現れている。伝統的な歩兵文化が色濃く残っており、歩兵が刀を装備することは他の国では見られない特徴。`
+                }
+                const character = {
+                    esh: "./images/エシュタルベルク兵.png",
+                    swa: "./images/スワールランド兵.png",
+                    ruman: "./images/ルーマンケルピッツ兵.png",
+                    ber: "./images/ベルッセン兵.png",
+                    fle: "./images/フレクタリア兵.png",
+                    habi: "./images/ハビラ兵.png",
+                    vix: "./images/ビクシニア兵.png"
+                }
+                document.getElementById('infoContent').textContent = descriptions[countryCode];
+                document.getElementById('infoContent2').textContent = descriptions2[countryCode];
+                document.getElementById('infoContent2_2').textContent = descriptions2_2[countryCode];
+                document.getElementById('infoContent3').textContent = descriptions3[countryCode];
+                const text = document.getElementById('infoContent3');
+                if (text.textContent === "防壁同盟") {
+                    text.style.color = "#abe773";
+                }
+                else {
+                    text.style.color = "#eb7262";
+                }
+                document.getElementById('infoContent4').innerHTML = descriptions4[countryCode];
+                document.getElementById('infoCharacter').src = character[countryCode];
+                document.getElementById('infoBox').style.display = 'block';
+            }
+            function hideInfo() {
+                if (event) {
+                    event.preventDefault();
+                }
+                document.getElementById('infoBox').style.display = 'none';
+            }
+            document.addEventListener('click', function (event) {
+
+                if (
+                    infoBox.style.display === 'block' &&
+                    !infoBox.contains(event.target) &&
+                    !event.target.closest('.Country')
+                ) {
+                    hideInfo();
+                }
+            });
+            document.addEventListener('DOMContentLoaded', () => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (!entry.isIntersecting && infoBox.style.display === 'block') {
+                            hideInfo();
+                        }
+                    });
+                }, {
+                    root: null,
+                    threshold: 0
+                });
+                if (infoBox) {
+                    observer.observe(infoBox);
+                }
+            });
+            document.addEventListener("DOMContentLoaded", () => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const image = entry.target.querySelector('.hero2Image2');
+                            if (image) {
+                                image.classList.add('visible');
+                                image.classList.remove('hidden');
+                            }
+                        }
+                    })
+                }, {
+                    threshold: 0.5
+                });
+                const targetSection = document.querySelector('#hero2');
+                if (targetSection) observer.observe(targetSection);
+
+                const overlay = document.getElementById('loadingOverlay');
+                setTimeout(() => {
+                    overlay.classList.add('loaded')
+                }, 100);
+
+
+            });
+            function wait(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+            async function animateLines() {
+                const h1lines = document.querySelectorAll(".hero_inner2 h1");
+                const lines = document.querySelectorAll(".hero_inner2 p");
+
+                for (let i = 0; i < h1lines.length; i++) {
+                    await wait(600);
+                    h1lines[i].classList.add("visible");
+
+                }
+                await wait(1500);
+
+                for (let i = 0; i < lines.length; i++) {
+                    lines[i].classList.add("visible");
+                    await wait(600);
+                }
+            }
+            document.addEventListener("DOMContentLoaded", () => {
+                animateLines();
+            });
+            const menuButtons = document.querySelectorAll('.menu-item');
+            const termGroups = document.querySelectorAll('.term-group');
+            document.querySelectorAll('.term').forEach(el => {
+                el.style.display = 'none';
+            });
+            document.querySelectorAll('.term-group').forEach(el => {
+                el.style.display = 'none';
+            });
+            menuButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const group = button.dataset.group;
+                    document.querySelectorAll('.term').forEach(el => {
+                        el.style.display = 'none';
+                    });
+                    document.querySelectorAll('.term-group').forEach(el => {
+                        el.style.display = 'none';
+                    });
+                    termGroups.forEach(g => {
+                        g.style.display = (g.dataset.group === group) ? 'flex' : 'none';
+                    });
+                });
+            });
+            function showTerm() {
+                const clickedButton = event.currentTarget;
+                const termName = clickedButton.getAttribute('data-term');
+
+                document.querySelectorAll('.term').forEach(el => {
+                    el.style.display = 'none';
+                });
+                document.querySelectorAll('.term-group').forEach(el => {
+                    el.style.display = 'none';
+                });
+
+                const targetTerm = document.querySelector(`.term[data-term="${termName}"]`);
+                if (targetTerm) {
+                    targetTerm.style.display = 'block';
+                }
+
+            }
+            function goBackList(group) {
+                document.querySelectorAll('.term').forEach(el => {
+                    el.style.display = 'none';
+                });
+                document.querySelectorAll('.term-group').forEach(el => {
+                    el.style.display = 'none';
+                });
+                const targetTerm = document.querySelector(`.term-group[data-group="${group}"]`);
+                if (targetTerm) {
+                    targetTerm.style.display = 'flex';
+                }
+            }
+        </script>
+        <script src="./js/header.js"></script>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ミュゼットとネコ耳の歩兵隊-キャラクター-</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="loadingOverlay"></div>
+    <div id="sideMenu" class="layout hidden">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <button class="sideButton musette" onclick="showCharaWindow('musette',event)">
+                            <img src="./images/musette_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton birdner" onclick="showCharaWindow('birdner',event)">
+                            <img src="./images/birdner_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton crane" onclick="showCharaWindow('crane',event)">
+                            <img src="./images/crane_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton erik" onclick="showCharaWindow('erik',event)">
+                            <img src="./images/erik_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton baird" onclick="showCharaWindow('baird',event)">
+                            <img src="./images/baird_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton elma" onclick="showCharaWindow('elma',event)">
+                            <img src="./images/elma_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton pino" onclick="showCharaWindow('pino',event)">
+                            <img src="./images/pino_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton beryl" onclick="showCharaWindow('beryl',event)">
+                            <img src="./images/beryl_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton lutz" onclick="showCharaWindow('lutz',event)">
+                            <img src="./images/lutz_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton lahti" onclick="showCharaWindow('lahti',event)">
+                            <img src="./images/lahti_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton avon" onclick="showCharaWindow('avon',event)">
+                            <img src="./images/avon_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton nene" onclick="showCharaWindow('nene',event)">
+                            <img src="./images/nene_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton griffon" onclick="showCharaWindow('griffon',event)">
+                            <img src="./images/griffon_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sideButton derwent" onclick="showCharaWindow('derwent',event)">
+                            <img src="./images/derwent_icon.png" class="sideImg">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <main>
+        <div id="hero3">
+            <div id="charaSelect" class="StartMenu visible">
+                <div class="UIBanner1">
+                    <h1 class="charaTitle1">―キャラクター―</h1>
+                    <img src="./images/UIバナー2.png" class="UIBanner1Img">
+                </div>
+
+                <button onclick="showCharaWindow('musette',event)" class="charaBanner musette">
+                    <div class="bannerWrapper"><img src="./images/musette_charabanner.jpg" alt="ミュゼット"
+                            class="bannerImg">
+                        <div class="bannerText">ミュゼット</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('birdner',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/birdner_charabanner.jpg" alt="バードナー"
+                            class="bannerImg">
+                        <div class="bannerText">バードナー</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('crane',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/crane_charabanner.jpg" alt="クレイン" class="bannerImg">
+                        <div class="bannerText">クレイン</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('erik',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/erik_charabanner.jpg" alt="エリク" class="bannerImg">
+                        <div class="bannerText">エリク</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('baird',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/baird_charabanner.jpg" alt="ベアード" class="bannerImg">
+                        <div class="bannerText">ベアード</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('elma',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/elma_charabanner.jpg" alt="エルマ" class="bannerImg">
+                        <div class="bannerText">エルマ</div>
+                    </div>
+                </button>
+
+                <button onclick="showCharaWindow('pino',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/pino_charabanner.jpg" alt="ピーノ" class="bannerImg">
+                        <div class="bannerText">ピーノ</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('beryl',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/beryl_charabanner.jpg" alt="ベリル" class="bannerImg">
+                        <div class="bannerText">ベリル</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('lutz',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/lutz_charabanner.jpg" alt="ルッツ" class="bannerImg">
+                        <div class="bannerText">ルッツ</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('lahti',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/lahti_charabanner.jpg" alt="ラティ" class="bannerImg">
+                        <div class="bannerText">ラティ</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('avon',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/avon_charabanner.jpg" alt="エイヴォン" class="bannerImg">
+                        <div class="bannerText">エイヴォン</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('nene',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/nene_charabanner.jpg" alt="ニーン" class="bannerImg">
+                        <div class="bannerText">ニーン</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('griffon',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/griffon_charabanner.jpg" alt="グリフォン" class="bannerImg">
+                        <div class="bannerText">グリフォン</div>
+                    </div>
+                </button>
+                <button onclick="showCharaWindow('derwent',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/derwent_charabanner.jpg" alt="ダーウェント" class="bannerImg">
+                        <div class="bannerText">ダーウェント</div>
+                    </div>
+                </button>
+            </div>
+            <div id="charaWindow" class="CharaMenu hidden">
+                <div class="charaWinNameBase">
+                    <h2 id="charaWinName" class=""></h2>
+                    <img src="./images/UIバナー2.png" class="UIBanner2">
+                </div>
+
+                <img src="" id="charaWinImg" class="observer-target">
+                <div id="charaWinMain" class="">
+                    <p id="charaText"></p>
+                </div>
+                <div class="StatusWin">
+                    <li id="forceText"></li>
+                    <li id="CountryText"></li>
+                    <li id="raceText"></li>
+                    <li id="jobText"></li>
+                </div>
+                <button id="face1" class="faceButtonBase " onclick="faceButton(1)">
+                    <div><img src="" id="faceButton1"></div>
+                </button>
+                <button id="face2" class="faceButtonBase" onclick="faceButton(2)">
+                    <div><img src="" id="faceButton2"></div>
+                </button>
+                <button id="face3" class="faceButtonBase" onclick="faceButton(3)">
+                    <div><img src="" id="faceButton3"></div>
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="./js/header.js"></script>
+    <script>
+        let currentChara = "";
+        function showCharaWindow(charaName, event) {
+            currentChara = charaName;
+            const charaWinImg = document.getElementById('charaWinImg');
+            charaWinImg.classList.remove('animate');
+            charaWinImg.style.transition = 'none';
+
+            const sideMenu = document.getElementById('sideMenu');
+            sideMenu.classList.remove('hidden');
+            sideMenu.classList.add('visible');
+
+            const charaWindow = document.getElementById('charaWindow');
+            charaWindow.classList.add('visible');
+            charaWindow.classList.remove('hidden');
+
+            const charaSelect = document.getElementById('charaSelect');
+            charaSelect.classList.add('hidden');
+            charaSelect.classList.remove('visible');
+            charaSelect.style.display = 'none';
+            const charaWinName = {
+                musette: "ミュゼット",
+                birdner: "バードナー",
+                crane: "クレイン",
+                erik: "エリク",
+                baird: "ベアード",
+                elma: "エルマ",
+                pino: "ピーノ",
+                beryl: "ベリル",
+                lutz: "ルッツ",
+                lahti: "ラティ",
+                avon: "エイヴォン",
+                nene: "ニーン",
+                griffon: "グリフォン",
+                derwent: "ダーウェント"
+            };
+            const charaImg = {
+                musette: "./images/ミュゼット_立ち絵.webp",
+                birdner: "./images/バードナー_立ち絵.webp",
+                crane: "./images/クレイン_立ち絵.webp",
+                erik: "./images/エリク_立ち絵.webp",
+                baird: "./images/ベアード_立ち絵.webp",
+                elma: "./images/エルマ_立ち絵.webp",
+                pino: "./images/ピーノ_立ち絵.webp",
+                beryl: "./images/ベリル_立ち絵.webp",
+                lutz: "./images/ルッツ_立ち絵.webp",
+                lahti: "./images/ラティ_立ち絵.webp",
+                avon: "./images/エイヴォン_立ち絵.webp",
+                nene: "./images/ニーン_立ち絵.webp",
+                griffon: "./images/グリフォン_立ち絵.webp",
+                derwent: "./images/ダーウェント_立ち絵.webp"
+            };
+            const charaText = {
+                musette: `本作の主人公。<br/>歩兵隊を率いている、エシュタルベルクの軍人さん。責任感と正義感が強く、
+                それ故に周りを振り回してしまう事も。彼女に怒られて泣いてしまったにゃんこは数しれず。`,
+                birdner: `エシュタルベルク軍の衛兵部隊「ロイヤルガード」の士官。<br/>
+                クールで部下には厳しいが、王子には甘いらしい。<br/>ミュゼットとは同期。`,
+                crane: `エシュタルベルクの偵察部隊を率いる、魔法使いの少女。<br/>
+                ミュゼットの部下であり、副官を務めている。あまり緊張感がない。`,
+                erik: `エシュタルベルクの騎兵隊を率いる、若き士官。<br/>
+                プライドが高く、高飛車な性格。歩兵隊を軽視し、度々ミュゼットといさかいを起こす。`,
+                baird: `新設された突撃兵部隊の士官。<br/>
+                成績優秀な優等生であり、部下からの信頼は厚い。実家はコイの養殖場を営んでいる。`,
+                elma: `機関銃部隊を率いる、黒猫の士官。<br/>
+                口数は少ないが、鋭い観察眼を持つ。ベアードとは幼馴染であり、よくパブにビールを飲みに行く。`,
+                pino: `ルーマン＝ケルピッツ所属の山岳兵。<br/>
+                お調子者で楽天的だが、山の知識と山砲の腕は確か。ルーマン＝ケルピッツは政治的に苦言を呈されやすい国だが、
+                彼はそれを気にしていない。ベルッセンのルッツとは馬が合わない。`,
+                beryl: `ルーマン＝ケルピッツの狙撃兵であり、ピーノの部下。<br/>
+                極度の人見知りで、人と話すことが大の苦手。風を読む能力の高い「ミステール族」の血筋であり、狙撃の腕はピカイチ。`,
+                lutz: `ベルッセンの航空騎兵隊を率いる士官。<br/>
+                普段は冷静沈着で寡黙な性格だが、翼竜を愛するあまりに冷静さを欠くことがある困った人。歴史的に遺恨のあるルーマン＝ケルピッツ
+                を快く思っておらず、ピーノとは犬猿の仲。相棒の翼竜は「リーボ」という名前がついている。`,
+                lahti: `スワールランドの砲兵隊を率いる士官。<br/>
+                男勝りな性格で、周りを引っ張る姉御肌。スワールランドは古くからエシュタルベルクと同盟関係にあり、ミュゼットとは演習などで面識がある。`,
+                avon: `フレクタリアの将校。<br/>幼い頃から皇帝の側で仕えており、皇帝には兄のように慕われている。神経質な性格で、いつも不機嫌そうにしている。
+                動物アレルギーがあり、獣人に近づくとくしゃみが止まらなくなる。エシュタルベルク人に対しては特にひどい。`,
+                nene: `スワールランドの将校。<br/>
+                噂だけで語られる、謎の多い工作部隊を率いている。`,
+                griffon: `ビクシニアの航空騎兵隊を率いる将校。<br/>
+                何故か仮面を装着しており、ミステリアスなエースとして敵味方の垣根を越えて知名度が高い。`,
+                derwent: `ハビラ海軍の若き将校。<br/>
+                ビクシニア侵攻時に名を轟かせ、他のハビラ高官からも一目置かれている。にこやかで礼儀正しいが、その言葉は辛辣。`
+            };
+            const charaForce = {
+                musette: "勢力：防壁同盟",
+                birdner: "勢力：防壁同盟",
+                crane: "勢力：防壁同盟",
+                erik: "勢力：防壁同盟",
+                baird: "勢力：防壁同盟",
+                elma: "勢力：防壁同盟",
+                pino: "勢力：防壁同盟",
+                beryl: "勢力：防壁同盟",
+                lutz: "勢力：防壁同盟",
+                lahti: "勢力：防壁同盟",
+                avon: "勢力：フレクタリア連合",
+                nene: "勢力：防壁同盟",
+                griffon: "勢力：フレクタリア連合",
+                derwent: "勢力：フレクタリア連合"
+            };
+            const charaCountry = {
+                musette: "国籍：エシュタルベルク王国",
+                birdner: "国籍：エシュタルベルク王国",
+                crane: "国籍：エシュタルベルク王国",
+                erik: "国籍：エシュタルベルク王国",
+                baird: "国籍：エシュタルベルク王国",
+                elma: "国籍：エシュタルベルク王国",
+                pino: "国籍：ルーマン＝ケルピッツ連邦",
+                beryl: "国籍：ルーマン＝ケルピッツ連邦",
+                lutz: "国籍：ベルッセン大公国",
+                lahti: "国籍：スワールランド共和国",
+                avon: "国籍：フレクタリア帝国",
+                nene: "国籍：スワールランド共和国",
+                griffon: "国籍：ビクシニア王国",
+                derwent: "国籍：ハビラ帝国"
+            };
+            const charaRace = {
+                musette: "種族：ノイ ✕ エシュター",
+                birdner: "種族：ノイ ✕ エシュター",
+                crane: "種族：ノイ",
+                erik: "種族：ノイ",
+                baird: "種族：エシュター",
+                elma: "種族：エシュター",
+                pino: "種族：ムフロン",
+                beryl: "種族：ミステール",
+                lutz: "種族：ノイ",
+                lahti: "種族：ノイ ✕ ドワーフ",
+                avon: "種族：ノイ",
+                nene: "種族：ノイ ✕ ドワーフ",
+                griffon: "種族：ノイ",
+                derwent: "種族：レオ"
+            };
+            const charaJob = {
+                musette: "兵科：歩兵",
+                birdner: "兵科：衛兵",
+                crane: "兵科：偵察兵",
+                erik: "兵科：騎兵",
+                baird: "兵科：突撃兵",
+                elma: "兵科：機関銃兵",
+                pino: "兵科：山岳兵",
+                beryl: "兵科：狙撃兵",
+                lutz: "兵科：航空騎兵",
+                lahti: "兵科：砲兵",
+                avon: "",
+                nene: "",
+                griffon: "",
+                derwent: ""
+            };
+            const charaFace1 = {
+                musette: "./images/musette_icon1.png",
+                birdner: "./images/birdner_icon1.png",
+                crane: "./images/crane_icon1.png",
+                erik: "./images/erik_icon1.png",
+                baird: "./images/baird_icon1.png",
+                elma: "./images/elma_icon1.png",
+                pino: "./images/pino_icon1.png",
+                beryl: "./images/beryl_icon1.png",
+                lutz: "./images/lutz_icon1.png",
+                lahti: "./images/lahti_icon1.png",
+                avon: "./images/avon_icon1.png",
+                nene: "",
+                griffon: "",
+                derwent: ""
+            }
+            const charaFace2 = {
+                musette: "./images/musette_icon2.png",
+                birdner: "./images/birdner_icon2.png",
+                crane: "./images/crane_icon2.png",
+                erik: "./images/erik_icon2.png",
+                baird: "./images/baird_icon2.png",
+                elma: "./images/elma_icon2.png",
+                pino: "./images/pino_icon2.png",
+                beryl: "./images/beryl_icon2.png",
+                lutz: "./images/lutz_icon2.png",
+                lahti: "./images/lahti_icon2.png",
+                avon: "./images/avon_icon2.png",
+                nene: "",
+                griffon: "",
+                derwent: ""
+            }
+            const charaFace3 = {
+                musette: "./images/musette_icon3.png",
+                birdner: "./images/birdner_icon3.png",
+                crane: "./images/crane_icon3.png",
+                erik: "./images/erik_icon3.png",
+                baird: "./images/baird_icon3.png",
+                elma: "./images/elma_icon3.png",
+                pino: "./images/pino_icon3.png",
+                beryl: "./images/beryl_icon3.png",
+                lutz: "./images/lutz_icon3.png",
+                lahti: "./images/lahti_icon3.png",
+                avon: "./images/avon_icon3.png",
+                nene: "",
+                griffon: "",
+                derwent: ""
+            }
+            charaWinImg.onload = () => {
+                charaWinImg.style.transform = 'translateX(-50)';
+            };
+
+            document.getElementById('faceButton1').src = charaFace1[currentChara];
+            document.getElementById('faceButton2').src = charaFace2[currentChara];
+            document.getElementById('faceButton3').src = charaFace3[currentChara];
+
+            if (charaFace1[currentChara] !== "") {
+                document.getElementById('face1').classList.add('visible');
+                document.getElementById('face1').classList.remove('hidden');
+                document.getElementById('face2').classList.add('visible');
+                document.getElementById('face2').classList.remove('hidden');
+                document.getElementById('face3').classList.add('visible');
+                document.getElementById('face3').classList.remove('hidden');
+                document.getElementById('face1').disabled = false;
+                document.getElementById('face2').disabled = false;
+                document.getElementById('face3').disabled = false;
+            }
+            else {
+                document.getElementById('face1').classList.add('hidden');
+                document.getElementById('face1').classList.remove('visible');
+                document.getElementById('face2').classList.add('hidden');
+                document.getElementById('face2').classList.remove('visible');
+                document.getElementById('face3').classList.add('hidden');
+                document.getElementById('face3').classList.remove('visible');
+                document.getElementById('face1').disabled = true;
+                document.getElementById('face2').disabled = true;
+                document.getElementById('face3').disabled = true;
+            }
+
+            document.getElementById('charaWinName').textContent = charaWinName[currentChara];
+
+            charaWinImg.src = charaImg[charaName];
+            document.getElementById('charaText').innerHTML = charaText[currentChara];
+
+            document.getElementById('forceText').textContent = charaForce[currentChara];
+            document.getElementById('CountryText').textContent = charaCountry[currentChara];
+            document.getElementById('raceText').textContent = charaRace[currentChara];
+            document.getElementById('jobText').textContent = charaJob[currentChara];
+            setTimeout(() => {
+                charaWinImg.style.transition = '';
+                charaWinImg.classList.add('animate');
+            }, 50);
+
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const overlay = document.getElementById('loadingOverlay');
+            if (overlay) {
+                setTimeout(() => {
+                    overlay.classList.add('loaded');
+                }, 100);
+            }
+        });
+        function faceButton(faceNum) {
+            const charaImg1 = {
+                musette: "./images/ミュゼット_立ち絵1.webp",
+                birdner: "./images/バードナー_立ち絵1.webp",
+                crane: "./images/クレイン_立ち絵1.webp",
+                erik: "./images/エリク_立ち絵1.webp",
+                baird: "./images/ベアード_立ち絵1.webp",
+                elma: "./images/エルマ_立ち絵1.webp",
+                pino: "./images/ピーノ_立ち絵1.webp",
+                beryl: "./images/ベリル_立ち絵1.webp",
+                lutz: "./images/ルッツ_立ち絵1.webp",
+                lahti: "./images/ラティ_立ち絵1.webp",
+                avon: "./images/エイヴォン_立ち絵1.webp"
+            }
+            const charaImg2 = {
+                musette: "./images/ミュゼット_立ち絵2.webp",
+                birdner: "./images/バードナー_立ち絵2.webp",
+                crane: "./images/クレイン_立ち絵2.webp",
+                erik: "./images/エリク_立ち絵2.webp",
+                baird: "./images/ベアード_立ち絵2.webp",
+                elma: "./images/エルマ_立ち絵2.webp",
+                pino: "./images/ピーノ_立ち絵2.webp",
+                beryl: "./images/ベリル_立ち絵2.webp",
+                lutz: "./images/ルッツ_立ち絵2.webp",
+                lahti: "./images/ラティ_立ち絵2.webp",
+                avon: "./images/エイヴォン_立ち絵2.webp"
+            }
+            const charaImg3 = {
+                musette: "./images/ミュゼット_立ち絵3.webp",
+                birdner: "./images/バードナー_立ち絵3.webp",
+                crane: "./images/クレイン_立ち絵3.webp",
+                erik: "./images/エリク_立ち絵3.webp",
+                baird: "./images/ベアード_立ち絵3.webp",
+                elma: "./images/エルマ_立ち絵3.webp",
+                pino: "./images/ピーノ_立ち絵3.webp",
+                beryl: "./images/ベリル_立ち絵3.webp",
+                lutz: "./images/ルッツ_立ち絵3.webp",
+                lahti: "./images/ラティ_立ち絵3.webp",
+                avon: "./images/エイヴォン_立ち絵3.webp"
+            }
+            const charaImgBase = document.getElementById('charaWinImg');
+            if (faceNum == 1) {
+                charaImgBase.src = charaImg1[currentChara];
+            }
+            else if (faceNum == 2) {
+                charaImgBase.src = charaImg2[currentChara];
+            }
+            else if (faceNum == 3) {
+                charaImgBase.src = charaImg3[currentChara];
+            }
+
+        }
+    </script>
+</body>
+
+</html>

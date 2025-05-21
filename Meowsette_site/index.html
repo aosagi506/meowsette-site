@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ミュゼットとネコ耳の歩兵隊-にくきゅうの旗のもとに-</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="loadingOverlay"></div>
+    <main>
+        <section id="hero" class="">
+            <div class="hero_inner">
+                <h2 class="indexHeading">ミリタリー×ファンタジー！<br />
+                    ゆるくて本格的なシミュレーションRPG</h2>
+                    <h1 class="visually-hidden">ミュゼットとネコ耳の歩兵隊,にくきゅうの旗のもとに</h1>
+                    <img src="./images/ロゴ2小2.png" class="titleLogo">
+            </div>
+        </section>
+        <Story>
+
+        </Story>
+    </main>
+    <script src="./js/header.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const overlay = document.getElementById('loadingOverlay');
+            if (overlay) {
+                setTimeout(() => {
+                    overlay.classList.add('loaded');
+                }, 100); // 500ms後にフェードアウト開始
+            }
+        });
+    </script>
+</body>
+
+</html>
