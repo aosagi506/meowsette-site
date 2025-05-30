@@ -5,97 +5,98 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <title>ミュゼットとネコ耳の歩兵隊-キャラクター-</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
 </head>
 
 <body>
     <div id="header"></div>
     <div id="loadingOverlay"></div>
-    <div id="sideMenu" class="layout hidden">
-        <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li>
-                        <button class="sideButton musette" onclick="showCharaWindow('musette',event)">
-                            <img src="./images/musette_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton birdner" onclick="showCharaWindow('birdner',event)">
-                            <img src="./images/birdner_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton crane" onclick="showCharaWindow('crane',event)">
-                            <img src="./images/crane_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton erik" onclick="showCharaWindow('erik',event)">
-                            <img src="./images/erik_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton baird" onclick="showCharaWindow('baird',event)">
-                            <img src="./images/baird_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton elma" onclick="showCharaWindow('elma',event)">
-                            <img src="./images/elma_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton pino" onclick="showCharaWindow('pino',event)">
-                            <img src="./images/pino_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton beryl" onclick="showCharaWindow('beryl',event)">
-                            <img src="./images/beryl_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton lutz" onclick="showCharaWindow('lutz',event)">
-                            <img src="./images/lutz_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton lahti" onclick="showCharaWindow('lahti',event)">
-                            <img src="./images/lahti_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton avon" onclick="showCharaWindow('avon',event)">
-                            <img src="./images/avon_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton nene" onclick="showCharaWindow('nene',event)">
-                            <img src="./images/nene_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton griffon" onclick="showCharaWindow('griffon',event)">
-                            <img src="./images/griffon_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="sideButton derwent" onclick="showCharaWindow('derwent',event)">
-                            <img src="./images/derwent_icon.png" class="sideImg">
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-    </div>
+    <div id="backGround"></div>
     <main>
+        <div id="sideMenu" class="layout active-false">
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <button class="sideButton musette" onclick="showCharaWindow('musette',event)">
+                                <img src="./images/musette_icon.png" alt="ミュゼット" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton birdner" onclick="showCharaWindow('birdner',event)">
+                                <img src="./images/birdner_icon.png" alt="バードナー" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton crane" onclick="showCharaWindow('crane',event)">
+                                <img src="./images/crane_icon.png" alt="クレイン" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton erik" onclick="showCharaWindow('erik',event)">
+                                <img src="./images/erik_icon.png" alt="エリク" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton baird" onclick="showCharaWindow('baird',event)">
+                                <img src="./images/baird_icon.png" alt="ベアード" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton elma" onclick="showCharaWindow('elma',event)">
+                                <img src="./images/elma_icon.png" alt="エルマ" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton pino" onclick="showCharaWindow('pino',event)">
+                                <img src="./images/pino_icon.png" alt="ピーノ" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton beryl" onclick="showCharaWindow('beryl',event)">
+                                <img src="./images/beryl_icon.png" alt="ベリル" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton lutz" onclick="showCharaWindow('lutz',event)">
+                                <img src="./images/lutz_icon.png" alt="ルッツ" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton lahti" onclick="showCharaWindow('lahti',event)">
+                                <img src="./images/lahti_icon.png" alt="ラティ" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton avon" onclick="showCharaWindow('avon',event)">
+                                <img src="./images/avon_icon.png" alt="エイヴォン" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton nene" onclick="showCharaWindow('nene',event)">
+                                <img src="./images/nene_icon.png" alt="ニーン" class="sideImg">
+                            </button> 
+                        </li>
+                        <li>
+                            <button class="sideButton griffon" onclick="showCharaWindow('griffon',event)">
+                                <img src="./images/griffon_icon.png" alt="グリフォン" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton derwent" onclick="showCharaWindow('derwent',event)">
+                                <img src="./images/derwent_icon.png" alt="ダーウェント" class="sideImg">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
         <div id="hero3">
             <div id="charaSelect" class="StartMenu visible">
                 <div class="UIBanner1">
                     <h1 class="charaTitle1">―キャラクター―</h1>
                     <img src="./images/UIバナー2.png" class="UIBanner1Img">
                 </div>
-
                 <button onclick="showCharaWindow('musette',event)" class="charaBanner musette">
                     <div class="bannerWrapper"><img src="./images/musette_charabanner.jpg" alt="ミュゼット"
                             class="bannerImg">
@@ -128,7 +129,6 @@
                         <div class="bannerText">エルマ</div>
                     </div>
                 </button>
-
                 <button onclick="showCharaWindow('pino',event)" class="charaBanner">
                     <div class="bannerWrapper"><img src="./images/pino_charabanner.jpg" alt="ピーノ" class="bannerImg">
                         <div class="bannerText">ピーノ</div>
@@ -160,17 +160,20 @@
                     </div>
                 </button>
                 <button onclick="showCharaWindow('griffon',event)" class="charaBanner">
-                    <div class="bannerWrapper"><img src="./images/griffon_charabanner.jpg" alt="グリフォン" class="bannerImg">
+                    <div class="bannerWrapper"><img src="./images/griffon_charabanner.jpg" alt="グリフォン"
+                            class="bannerImg">
                         <div class="bannerText">グリフォン</div>
                     </div>
                 </button>
                 <button onclick="showCharaWindow('derwent',event)" class="charaBanner">
-                    <div class="bannerWrapper"><img src="./images/derwent_charabanner.jpg" alt="ダーウェント" class="bannerImg">
+                    <div class="bannerWrapper"><img src="./images/derwent_charabanner.jpg" alt="ダーウェント"
+                            class="bannerImg">
                         <div class="bannerText">ダーウェント</div>
                     </div>
                 </button>
             </div>
-            <div id="charaWindow" class="CharaMenu hidden">
+        </div>
+                    <div id="charaWindow" class="CharaMenu hidden">
                 <div class="charaWinNameBase">
                     <h2 id="charaWinName" class=""></h2>
                     <img src="./images/UIバナー2.png" class="UIBanner2">
@@ -178,7 +181,7 @@
 
                 <img src="" id="charaWinImg" class="observer-target">
                 <div id="charaWinMain" class="">
-                    <p id="charaText"></p>
+                    <p id="charaText" ></p>
                 </div>
                 <div class="StatusWin">
                     <li id="forceText"></li>
@@ -196,7 +199,6 @@
                     <div><img src="" id="faceButton3"></div>
                 </button>
             </div>
-        </div>
     </main>
     <script src="./js/header.js"></script>
     <script>
@@ -208,8 +210,8 @@
             charaWinImg.style.transition = 'none';
 
             const sideMenu = document.getElementById('sideMenu');
-            sideMenu.classList.remove('hidden');
-            sideMenu.classList.add('visible');
+            sideMenu.classList.remove('active-false');
+            sideMenu.classList.add('active-true');
 
             const charaWindow = document.getElementById('charaWindow');
             charaWindow.classList.add('visible');
@@ -252,35 +254,35 @@
                 derwent: "./images/ダーウェント_立ち絵.webp"
             };
             const charaText = {
-                musette: `本作の主人公。<br/>歩兵隊を率いている、エシュタルベルクの軍人さん。責任感と正義感が強く、
+                musette: `本作の主人公。歩兵隊を率いている、エシュタルベルクの軍人さん。責任感と正義感が強く、
                 それ故に周りを振り回してしまう事も。彼女に怒られて泣いてしまったにゃんこは数しれず。`,
-                birdner: `エシュタルベルク軍の衛兵部隊「ロイヤルガード」の士官。<br/>
+                birdner: `エシュタルベルク軍の衛兵部隊「ロイヤルガード」の士官。
                 クールで部下には厳しいが、王子には甘いらしい。<br/>ミュゼットとは同期。`,
-                crane: `エシュタルベルクの偵察部隊を率いる、魔法使いの少女。<br/>
+                crane: `エシュタルベルクの偵察部隊を率いる、魔法使いの少女。
                 ミュゼットの部下であり、副官を務めている。あまり緊張感がない。`,
-                erik: `エシュタルベルクの騎兵隊を率いる、若き士官。<br/>
+                erik: `エシュタルベルクの騎兵隊を率いる、若き士官。
                 プライドが高く、高飛車な性格。歩兵隊を軽視し、度々ミュゼットといさかいを起こす。`,
-                baird: `新設された突撃兵部隊の士官。<br/>
+                baird: `新設された突撃兵部隊の士官。
                 成績優秀な優等生であり、部下からの信頼は厚い。実家はコイの養殖場を営んでいる。`,
-                elma: `機関銃部隊を率いる、黒猫の士官。<br/>
+                elma: `機関銃部隊を率いる、黒猫の士官。
                 口数は少ないが、鋭い観察眼を持つ。ベアードとは幼馴染であり、よくパブにビールを飲みに行く。`,
-                pino: `ルーマン＝ケルピッツ所属の山岳兵。<br/>
+                pino: `ルーマン＝ケルピッツ所属の山岳兵。
                 お調子者で楽天的だが、山の知識と山砲の腕は確か。ルーマン＝ケルピッツは政治的に苦言を呈されやすい国だが、
                 彼はそれを気にしていない。ベルッセンのルッツとは馬が合わない。`,
-                beryl: `ルーマン＝ケルピッツの狙撃兵であり、ピーノの部下。<br/>
+                beryl: `ルーマン＝ケルピッツの狙撃兵であり、ピーノの部下。
                 極度の人見知りで、人と話すことが大の苦手。風を読む能力の高い「ミステール族」の血筋であり、狙撃の腕はピカイチ。`,
-                lutz: `ベルッセンの航空騎兵隊を率いる士官。<br/>
-                普段は冷静沈着で寡黙な性格だが、翼竜を愛するあまりに冷静さを欠くことがある困った人。歴史的に遺恨のあるルーマン＝ケルピッツ
+                lutz: `ベルッセンの航空騎兵隊を率いる士官。
+                普段は冷静沈着で頼れる性格だが、翼竜を愛するあまりに冷静さを欠くことがある困った人。歴史的に遺恨のあるルーマン＝ケルピッツ
                 を快く思っておらず、ピーノとは犬猿の仲。相棒の翼竜は「リーボ」という名前がついている。`,
-                lahti: `スワールランドの砲兵隊を率いる士官。<br/>
+                lahti: `スワールランドの砲兵隊を率いる士官。
                 男勝りな性格で、周りを引っ張る姉御肌。スワールランドは古くからエシュタルベルクと同盟関係にあり、ミュゼットとは演習などで面識がある。`,
                 avon: `フレクタリアの将校。<br/>幼い頃から皇帝の側で仕えており、皇帝には兄のように慕われている。神経質な性格で、いつも不機嫌そうにしている。
                 動物アレルギーがあり、獣人に近づくとくしゃみが止まらなくなる。エシュタルベルク人に対しては特にひどい。`,
-                nene: `スワールランドの将校。<br/>
+                nene: `スワールランドの将校。
                 噂だけで語られる、謎の多い工作部隊を率いている。`,
-                griffon: `ビクシニアの航空騎兵隊を率いる将校。<br/>
+                griffon: `ビクシニアの航空騎兵隊を率いる将校。
                 何故か仮面を装着しており、ミステリアスなエースとして敵味方の垣根を越えて知名度が高い。`,
-                derwent: `ハビラ海軍の若き将校。<br/>
+                derwent: `ハビラ海軍の若き将校。
                 ビクシニア侵攻時に名を轟かせ、他のハビラ高官からも一目置かれている。にこやかで礼儀正しいが、その言葉は辛辣。`
             };
             const charaForce = {
@@ -441,14 +443,6 @@
             }, 50);
 
         }
-        document.addEventListener("DOMContentLoaded", () => {
-            const overlay = document.getElementById('loadingOverlay');
-            if (overlay) {
-                setTimeout(() => {
-                    overlay.classList.add('loaded');
-                }, 100);
-            }
-        });
         function faceButton(faceNum) {
             const charaImg1 = {
                 musette: "./images/ミュゼット_立ち絵1.webp",

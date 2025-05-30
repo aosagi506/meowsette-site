@@ -17,6 +17,17 @@ p {
     margin: 0;
 }
 
+.border1 {
+    border: 2px solid darkgrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boldText1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 #loadingOverlay {
     position: fixed;
     top: 0;
@@ -44,6 +55,7 @@ p {
     height: auto;
     opacity: 0;
     transition: opacity 0.4s ease;
+    z-index: 1000;
 }
 
 #header.loaded {
@@ -51,11 +63,44 @@ p {
 }
 
 .Container {
+    position: relative;
     border-top: 8px solid darkolivegreen;
     border-bottom: 8px solid darkolivegreen;
     height: 68px;
     margin: 0 auto;
     background-color: rgb(201, 107, 0);
+}
+
+.Container2 {
+    border-top: 8px solid darkolivegreen;
+    border-bottom: 8px solid darkolivegreen;
+    background-color: rgb(201, 107, 0);
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spMenuButton {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#spMenuVisible .spMenuButton {
+    top: 18px;
+}
+
+.spMenuButton:hover {
+    transform: scale(110%);
+}
+
+.spMenuButton:active {
+    transform: scale(90%);
 }
 
 .Flex {
@@ -65,11 +110,20 @@ p {
     align-items: center;
 }
 
+.spec {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .Header_menu {
     position: absolute;
     box-sizing: border-box;
-    right: 0;
-    top: 10px;
+    right: 30px;
+    top: 0;
 }
 
 .Logo {
@@ -77,11 +131,14 @@ p {
     position: relative;
     Left: 50px;
     bottom: 4px;
+
+}
+
+.LogoImg {
     transition: sfilter 0.2s ease;
 }
 
-.Logo:hover {
-
+.LogoImg:hover {
     animation: bounce 0.4s ease;
 }
 
@@ -89,14 +146,9 @@ p {
 .Header_menu li {
     font-size: 9px;
     list-style: none;
-    width: 150px;
-    position: relative;
+    margin-right: 15px;
 }
 
-.Header_menu span {
-    position: relative;
-    right: 45px;
-}
 
 .Header_menu li a {
     text-decoration: none;
@@ -105,11 +157,11 @@ p {
     margin-bottom: 20px;
 }
 
-a.menu_button:hover {
+.Header_menu li:hover {
     animation: bounce 0.4s ease;
 }
 
-a.menu_button:hover .menu-text {
+.Header_menu li:hover .menu-text {
     color: khaki;
 }
 
@@ -182,6 +234,7 @@ a.menu_button:hover .menu-text {
 .titleLogo {
     position: relative;
     width: 600px;
+    max-width: 600px;
     top: 130px;
     height: auto;
 
@@ -203,7 +256,12 @@ a.menu_button:hover .menu-text {
 }
 
 .storyHeading {
+    position: relative;
     font-size: 40px;
+    opacity: 0;
+    transform: translateY(-1em);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    z-index: 100;
 }
 
 .hero_inner2 {
@@ -214,15 +272,6 @@ a.menu_button:hover .menu-text {
     font-size: 25px;
     font-weight: 500;
     text-shadow: 2px 3px 3px black;
-
-}
-
-.hero_inner2 h1 {
-
-    opacity: 0;
-    transform: translateY(-1em);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-    z-index: 10;
 
 }
 
@@ -287,8 +336,8 @@ a.menu_button:hover .menu-text {
 
 .hero2Image2 {
     box-sizing: border-box;
-    position: relative;
-    margin-left: 60%;
+    position: absolute;
+    left: 60%;
     height: 100%;
     transition: transform 0.8s ease-out, opacity 0.8s ease-out;
     z-index: 5;
@@ -310,11 +359,29 @@ a.menu_button:hover .menu-text {
     opacity: 1;
 }
 
+.active-true {
+    display: block;
+}
+
+.active-false {
+    display: none;
+}
+
 .menu-icon {
     position: relative;
     width: 50px;
     height: 50px;
     bottom: 8px;
+}
+
+.map-container {
+    position: relative;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 650px;
+    padding-bottom: 50px;
 }
 
 .Map {
@@ -389,15 +456,7 @@ a.menu_button:hover .menu-text {
     left: 38%;
 }
 
-.map-container {
-    position: relative;
-    width: 100%;
-    max-width: 650px;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 250px;
-    padding-bottom: 50px;
-}
+
 
 
 #infoBox {
@@ -428,8 +487,9 @@ a.menu_button:hover .menu-text {
     background-color: #2723208f;
     width: 650px;
     height: 400px;
-    transform: translateX(-50%);
-    left: 50%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
     top: -20px;
     display: block;
     border-radius: 30px;
@@ -438,12 +498,12 @@ a.menu_button:hover .menu-text {
 }
 
 .term-menu {
+    position: sticky;
     margin: 0;
     padding: 0;
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: sticky;
     list-style: none;
     background-color: #0000004d;
 }
@@ -457,7 +517,7 @@ a.menu_button:hover .menu-text {
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    width: 55px;
+    width: 50px;
     height: 30px;
     transition: transform 0.1s ease;
 }
@@ -507,7 +567,7 @@ a.menu_button:hover .menu-text {
     flex-wrap: wrap;
     writing-mode: vertical-lr;
     gap: 5px;
-    width: 500px;
+
     height: 300px;
     overflow: visible;
     left: 10%;
@@ -695,7 +755,7 @@ a.menu_button:hover .menu-text {
     position: relative;
     background: none;
     border: none;
-    width: 40%;
+    width: 85vh;
     align-items: center;
     cursor: pointer;
     transition: sfilter 0.2s ease;
@@ -729,14 +789,14 @@ a.menu_button:hover .menu-text {
     bottom: 32%;
     transform: translateX(-50%);
     font-weight: bold;
-    font-size: clamp(12px, 2.5vw, 30px);
+    font-size: 5vh;
 }
 
 .charaBanner:hover .bannerText {
     color: #cf9902;
 }
 
-.layout li {
+.sidebar li {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -756,7 +816,6 @@ a.menu_button:hover .menu-text {
     left: 0;
     top: 80px;
     z-index: 100;
-
 }
 
 .sideButton {
@@ -774,6 +833,7 @@ a.menu_button:hover .menu-text {
 
     transform: translateY(0) scale(0.92);
 }
+
 
 .sideImg {
     width: 100px;
@@ -845,15 +905,16 @@ a.menu_button:hover .menu-text {
 #charaWindow {
     background-color: #b98b5f69;
     border: #a84c00c7 outset 5px;
-    width: 930px;
-    height: 470px;
+    min-width: 820px;
+    width: 70%;
+    height: 80%;
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
-    top: 50%;
-    left: 53%;
+    top: 57%;
+    left: 58%;
     z-index: 1;
 }
 
@@ -912,10 +973,9 @@ a.menu_button:hover .menu-text {
 
 #charaWinImg {
     visibility: hidden;
-    max-width: 450px;
-    height: auto;
+    height: 100%;
     position: fixed;
-    left: 63%;
+    left: 60%;
     bottom: 0;
     transform: translateX(0);
     opacity: 0;
@@ -930,10 +990,11 @@ a.menu_button:hover .menu-text {
 
 #face1 {
     position: absolute;
-    left: 440px;
+    left: 50%;
     top: 0;
-    width: 100px;
-    height: 100px;
+    width: 7vw;
+    height: auto;
+    z-index: 100;
 }
 
 #faceButton1 {
@@ -945,10 +1006,11 @@ a.menu_button:hover .menu-text {
 
 #face2 {
     position: absolute;
-    left: 505px;
-    top: 65px;
-    width: 100px;
-    height: 100px;
+    left: 58%;
+    top: 10%;
+    width: 7vw;
+    height: auto;
+    z-index: 100;
 }
 
 #faceButton2 {
@@ -960,11 +1022,11 @@ a.menu_button:hover .menu-text {
 
 #face3 {
     position: absolute;
-    left: 440px;
-    top: 130px;
-    width: 100px;
-    height: 100px;
-
+    left: 50%;
+    top: 20%;
+    width: 7vw;
+    height: auto;
+    z-index: 100;
 }
 
 .faceButtonBase {
@@ -972,7 +1034,6 @@ a.menu_button:hover .menu-text {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-
 }
 
 .faceButtonBase:disabled {
@@ -1011,8 +1072,10 @@ a.menu_button:hover .menu-text {
     font-weight: bold;
 }
 
+
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
     background-color: darkolivegreen;
 }
 
@@ -1049,7 +1112,7 @@ a.menu_button:hover .menu-text {
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1024px) {
 
     .Header_menu {
         flex-direction: column;
@@ -1057,61 +1120,188 @@ a.menu_button:hover .menu-text {
         position: relative;
     }
 
-    #header {
-        position: relative;
-    }
-
-    .Header_menu span {
-        position: relative;
-        right: 0px;
-    }
-
-    .Header_menu li {
-        width: 100%;
-        text-align: left;
-        margin-top: 15px;
-    }
-
     .Logo {
         width: 180px;
+        left:20px;
     }
 
-    .Container {
-        height: auto;
-        flex-direction: column;
-        align-items: center;
+    .spAuto {
+        width: 90%;
     }
 
-    #hero {
-        margin-top: 0;
+    .spText {
+        font-size: 18px;
     }
 
-    #hero2 {
-        margin-top: 0;
+    #infoBox {
+        max-width: 500px;
+        width: 95%;
     }
 
-    #hero3 {
-        margin-top: 0;
+    .term-button {
+        width: 200px;
+    }
+
+    .definition {
+        font-size: 15px;
+    }
+
+    .term-chara-text {
+        font-size: 14px;
+    }
+
+    #infoContent4 {
+        font-size: 18px;
+    }
+
+    .spContainer {
+        width: 95%;
+    }
+
+    .hero2Image2 {
+        position: absolute;
+        left: 50%;
+    }
+
+
+    .menu-item {
+        width: 40px;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    #spMenuHidden.sp {
+        display: block;
+    }
+
+    #spMenuVisible.sp {
+        display: none;
+    }
+
+    .sideImg {
+        width: 60px;
     }
 
     .sidebar {
-        background: rgb(201, 107, 0);
+        position: fixed;
+        width: 100%;
         overflow-x: auto;
-        width: 100vh;
-        left: 0;
-        top: 0;
-        border-right: 5px solid darkolivegreen;
-        z-index: 100;
-        flex-direction: row;
-        position: relative;
+        height: 95px;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+
+    .sidebar ul {
+        display: flex;
+        list-style: none;
+        position: static;
+        gap: 10px;
+        white-space: nowrap;
+        scrollbar-width: thin;
+    }
+
+    #charaWindow {
+        width: 90%;
+        height: 60%;
+        max-height: 800px;
+        top: 65%;
+        left: 50%;
+        max-width: 600px;
+        min-width: 0px;
+        max-height: 420px;
+    }
+
+    .StatusWin {
+        left: 20px;
+    }
+
+    .StatusWin li {
+        font-size: 13px;
+    }
+
+    .charaWinNameBase {
+        width: 200px;
+        left: 10px;
+    }
+
+    .UIBanner2 {
+        width: 200px;
+    }
+
+    #charaWinName {
+        font-size: 25px;
+        top: 3px;
+        left: 110px;
+    }
+
+    #charaText {
+        font-size: 13px;
+    }
+
+    #charaWinMain {
+        left: 10px;
+        top: auto;
+        bottom: 3%;
+        height: 45%;
+    }
+
+    .charaBanner {
+        width: 450px;
+    }
+
+    .bannerText {
+        font-size: 25px;
+    }
+
+    #face1 {
+        width: 10vh;
+    }
+
+    #face2 {
+        width: 10vh;
+    }
+
+    #face3 {
+        width: 10vh;
+    }
+
+    #charaWinImg {
+        height: 100%;
+        left: 50%;
     }
 }
 
-@media (width >=1050px) {
-    #header {
-        position: fixed;
-        z-index: 1000;
-        background-color: orange;
+@media screen and (max-width: 600px) {
+    .hero2Image2 {
+        left: 30%;
+    }
+        #face1 {
+        width: 8vh;
+    }
+
+    #face2 {
+        width: 8vh;
+    }
+
+    #face3 {
+        width: 8vh;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .pc {
+        display: block;
+    }
+
+    .sp {
+        display: none;
     }
 
 }

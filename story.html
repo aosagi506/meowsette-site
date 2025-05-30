@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <title>ミュゼットとネコ耳の歩兵隊-ストーリー-</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
     <div id="loadingOverlay"></div>
     <main>
         <section id="hero2" class="">
-            <div class="hero_inner2">
+            <div class="hero_inner2 spText">
                 <h1 class="storyHeading">―ストーリー―</h1>
                 <p>戦乱の世は終わりを告げ、世界は平穏を見せたかに思えた。</p>
                 <p>しかし、その安定を崩す者が現れた。</p>
@@ -34,7 +35,7 @@
         </section>
         <section>
             <h2 class="forceHeading">―勢力図―</h2>
-            <div class="map-container">
+            <div class="map-container spContainer">
                 <img src="./images/map.jpg" class="Map">
                 <div class="Country esh"><button onclick="showInfo('esh',event);">エシュタルベルク王国</button></div>
                 <div class="Country swa"><button onclick="showInfo('swa',event);">スワールランド共和国</button></div>
@@ -43,20 +44,20 @@
                 <div class="Country fle"><button onclick="showInfo('fle',event);">フレクタリア帝国</button></div>
                 <div class="Country habi"><button onclick="showInfo('habi',event);">ハビラ帝国</button></div>
                 <div class="Country vix"><button onclick="showInfo('vix',event);">ビクシニア王国</button></div>
-                <div id="infoBox">
-                    <button onclick="hideInfo()">✕</button>
-                    <div id="infoContent3"></div>
-                    <div id="infoContent2"></div>
-                    <div id="infoContent"></div>
-                    <div id="infoContent2_2"></div>
-                    <div id="infoContent4"></div>
+                <div id="infoBox" >
+                    <button onclick="hideInfo()"alt="閉じる">✕</button>
+                    <p id="infoContent3"></p>
+                    <p id="infoContent2"></p>
+                    <p id="infoContent" ></p>
+                    <p id="infoContent2_2"></p>
+                    <p id="infoContent4"></p>
                     <img src="" id="infoCharacter" alt="兵士" style="width:200px;">
                 </div>
             </div>
         </section>
         <section id="termSection">
             <h2 class="forceHeading">―用語図鑑―</h2>
-            <div class="termContainer">
+            <div class="termContainer spContainer">
                 <nav>
                     <ul class="term-menu">
                         <li class="menu-wrapper">
@@ -549,6 +550,7 @@
                     targetTerm.style.display = 'flex';
                 }
             }
+            
         </script>
         <script src="./js/header.js"></script>
     </main>
