@@ -6,6 +6,7 @@ body {
     width: 100%;
     background-color: rgb(255, 218, 176);
     overflow-x: hidden;
+    padding-top: 40px;
 }
 
 body::before,
@@ -135,6 +136,7 @@ p {
 }
 
 .LogoImg {
+    width: 200px;
     transition: sfilter 0.2s ease;
 }
 
@@ -144,7 +146,6 @@ p {
 
 
 .Header_menu li {
-    font-size: 9px;
     list-style: none;
     margin-right: 15px;
 }
@@ -167,7 +168,12 @@ p {
 
 .menu-text {
     display: block;
+    font-size: 9px;
     line-height: 1.2;
+}
+
+.menu-text2 {
+    font-size: 20px;
 }
 
 .visually-hidden {
@@ -200,7 +206,6 @@ p {
 }
 
 #hero {
-    margin-top: 80px;
     background-image: url(../images/兵士1.jpg);
     background-position: 50% 30%;
     background-size: cover;
@@ -300,7 +305,6 @@ p {
 }
 
 #hero2 {
-    margin-top: 80px;
     box-sizing: border-box;
     background-image: url(../images/室内.jpg);
     background-position: center;
@@ -842,14 +846,12 @@ p {
 }
 
 #hero3 {
-    margin-top: 80px;
     background-image: url(../images/背景_武器庫.jpg);
     background-position: center;
     background-size: cover;
-
-    height: calc(100dvh - 80px);
     position: relative;
     background-attachment: fixed;
+    height: 91vh;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -1122,7 +1124,7 @@ p {
 
     .Logo {
         width: 180px;
-        left:20px;
+        left: 20px;
     }
 
     .spAuto {
@@ -1282,7 +1284,8 @@ p {
     .hero2Image2 {
         left: 30%;
     }
-        #face1 {
+
+    #face1 {
         width: 8vh;
     }
 
@@ -1304,4 +1307,231 @@ p {
         display: none;
     }
 
+}
+
+@media screen and (min-height:1500px),
+screen and (min-width:1500px) {
+    .Container {
+        height: 150px;
+    }
+
+    .LogoImg {
+        width: 400px;
+    }
+    body{
+        padding-top: 120px;
+    }
+    .menu-text {
+        font-size: 25px;
+    }
+
+    .menu-text2 {
+        font-size: 55px;
+    }
+
+    .menu-icon {
+        width: 100px;
+        height: auto;
+    }
+
+    #charaWindow {
+        width: 90%;
+        height: 50%;
+        top: 55%;
+        left: 50%;
+        min-width: 0px;
+    }
+
+    .spMenuButton {
+        width: 100px;
+        top:30px;
+    }
+    #spMenuVisible .spMenuButton {
+    top: 38px;
+}
+    .termContainer{
+        max-width: 80%;
+        height: 500px;
+    }
+    
+    .Header_menu {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .Logo {
+        width: 180px;
+        left: 20px;
+    }
+
+    .spAuto {
+        width: 90%;
+    }
+
+    .spText {
+        font-size: 25px;
+    }
+
+    .map-container {
+        max-width: 80%;
+    }
+    #infoContent2{
+        font-size: 25px;
+        top:30px;
+    }
+    #infoContent{
+        font-size: 40px;
+    }
+    #infoContent2_2{
+        font-size: 20px;
+    }
+        #infoContent3{
+        font-size: 20px;
+    }
+    #infoContent4{
+        position: relative;
+        top:10px;
+    }
+    #infoBox {
+        width: 75%;
+        height: 70%;
+    }
+
+    .term-button {
+        width: 300px;
+    }
+
+    .definition {
+        font-size: 20px;
+    }
+
+    .term-chara-text {
+        font-size: 18px;
+    }
+
+    #infoContent4 {
+        font-size: 25px;
+    }
+
+    .spContainer {
+        width: 95%;
+    }
+
+    .hero2Image2 {
+        position: absolute;
+        left: 50%;
+    }
+
+
+    .menu-item {
+        width: 60px;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    #spMenuHidden.sp {
+        display: block;
+    }
+
+    #spMenuVisible.sp {
+        display: none;
+    }
+
+    .sideImg {
+        width: 160px;
+    }
+
+    .sidebar {
+        position: fixed;
+        width: 100%;
+        overflow-x: auto;
+        height: 200px;
+        top: 150px;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+
+    .sidebar ul {
+        display: flex;
+        list-style: none;
+        position: static;
+        gap: 10px;
+        white-space: nowrap;
+        scrollbar-width: thin;
+    }
+
+    .StatusWin {
+        left: 20px;
+        top:100px;
+    }
+
+    .StatusWin li {
+        font-size: 25px;
+    }
+
+    .charaWinNameBase {
+        width: 300px;
+        left: 10px;
+    }
+
+    .UIBanner2 {
+        width: 300px;
+    }
+
+    #charaWinName {
+        font-size: 40px;
+        top: 3px;
+        left: 55%;
+    }
+
+    #charaText {
+        font-size: 25px;
+    }
+
+    #charaWinMain {
+        left: 10px;
+        top: auto;
+        bottom: 3%;
+        height: 45%;
+    }
+
+    .charaBanner {
+        width: 600px;
+        margin-top: 20px;
+    }
+
+    .bannerText {
+        width: 600px;
+        font-size: 40px;
+    }
+
+    #face1 {
+        width: 15vw;
+left: 40%;
+    }
+
+    #face2 {
+        width: 15vw;
+        left: 52%;
+        top:12%;
+    }
+
+    #face3 {
+        width: 15vw;
+        left: 40%;
+        top:24%;
+    }
+
+    #charaWinImg {
+        height: 100%;
+        left: 45%;
+    }
 }
