@@ -1114,7 +1114,7 @@ p {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width:600px) and (max-width: 1024px) {
 
     .Header_menu {
         flex-direction: column;
@@ -1280,23 +1280,6 @@ p {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .hero2Image2 {
-        left: 30%;
-    }
-
-    #face1 {
-        width: 8vh;
-    }
-
-    #face2 {
-        width: 8vh;
-    }
-
-    #face3 {
-        width: 8vh;
-    }
-}
 
 @media screen and (min-width:1025px) {
     .pc {
@@ -1309,45 +1292,46 @@ p {
 
 }
 
-@media screen and (min-height:1500px),
-screen and (min-width:1500px) {
+@media screen and (max-width:599px) {
     .Container {
-        height: 150px;
+        height: 100px;
     }
 
     .LogoImg {
-        width: 400px;
+        width: 250px;
     }
     body{
-        padding-top: 120px;
+        padding-top: 75px;
     }
     .menu-text {
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .menu-text2 {
-        font-size: 55px;
+        font-size: 25px;
     }
 
     .menu-icon {
-        width: 100px;
+        top:1px;
+        width: 45px;
         height: auto;
     }
 
     #charaWindow {
         width: 90%;
         height: 50%;
-        top: 55%;
+        top: 65%;
         left: 50%;
         min-width: 0px;
     }
 
     .spMenuButton {
-        width: 100px;
-        top:30px;
+        width: 50px;
+        top:20px;
+        right: 10px;
     }
     #spMenuVisible .spMenuButton {
-    top: 38px;
+    top: 28px;
 }
     .termContainer{
         max-width: 80%;
@@ -1370,7 +1354,7 @@ screen and (min-width:1500px) {
     }
 
     .spText {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     .map-container {
@@ -1445,15 +1429,15 @@ screen and (min-width:1500px) {
     }
 
     .sideImg {
-        width: 160px;
+        width:90px;
     }
 
     .sidebar {
         position: fixed;
         width: 100%;
         overflow-x: auto;
-        height: 200px;
-        top: 150px;
+        height: 120px;
+        top: 100px;
         overflow-y: hidden;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
@@ -1469,69 +1453,69 @@ screen and (min-width:1500px) {
     }
 
     .StatusWin {
-        left: 20px;
-        top:100px;
+        left: 15px;
+        top:45px;
     }
 
     .StatusWin li {
-        font-size: 25px;
+        font-size: 11px;
     }
 
     .charaWinNameBase {
-        width: 300px;
-        left: 10px;
+        width: 150px;
+        left: 0;
     }
 
     .UIBanner2 {
-        width: 300px;
+        width: 150px;
     }
 
     #charaWinName {
-        font-size: 40px;
+        font-size: 20px;
         top: 3px;
-        left: 55%;
+        left: 60%;
     }
 
     #charaText {
-        font-size: 25px;
+        font-size: 12px;
     }
 
     #charaWinMain {
         left: 10px;
         top: auto;
         bottom: 3%;
-        height: 45%;
+        height: 50%;
     }
 
     .charaBanner {
-        width: 600px;
+        width: 350px;
         margin-top: 20px;
     }
 
     .bannerText {
-        width: 600px;
-        font-size: 40px;
+        width: 350px;
+        font-size: 25px;
     }
 
     #face1 {
-        width: 15vw;
-left: 40%;
+        width: 55px;
+left: 43%;
     }
 
     #face2 {
-        width: 15vw;
+        width: 55px;
         left: 52%;
-        top:12%;
+        top:9%;
     }
 
     #face3 {
-        width: 15vw;
-        left: 40%;
-        top:24%;
+        width: 55px;
+        left: 43%;
+        top:18%;
     }
 
     #charaWinImg {
-        height: 100%;
+        height: 95%;
         left: 45%;
     }
 }
