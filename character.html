@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>ミュゼットとネコ耳の歩兵隊-キャラクター-</title>
     <link rel="icon" type="image/png" href="./images/favicon.png">
@@ -75,7 +76,7 @@
                         <li>
                             <button class="sideButton nene" onclick="showCharaWindow('nene',event)">
                                 <img src="./images/nene_icon.png" alt="ニーン" class="sideImg">
-                            </button> 
+                            </button>
                         </li>
                         <li>
                             <button class="sideButton griffon" onclick="showCharaWindow('griffon',event)">
@@ -173,32 +174,32 @@
                 </button>
             </div>
         </div>
-                    <div id="charaWindow" class="CharaMenu hidden">
-                <div class="charaWinNameBase">
-                    <h2 id="charaWinName" class=""></h2>
-                    <img src="./images/UIバナー2.png" class="UIBanner2">
-                </div>
-
-                <img src="" id="charaWinImg" class="observer-target">
-                <div id="charaWinMain" class="">
-                    <p id="charaText" ></p>
-                </div>
-                <div class="StatusWin">
-                    <li id="forceText"></li>
-                    <li id="CountryText"></li>
-                    <li id="raceText"></li>
-                    <li id="jobText"></li>
-                </div>
-                <button id="face1" class="faceButtonBase " onclick="faceButton(1)">
-                    <div><img src="" id="faceButton1"></div>
-                </button>
-                <button id="face2" class="faceButtonBase" onclick="faceButton(2)">
-                    <div><img src="" id="faceButton2"></div>
-                </button>
-                <button id="face3" class="faceButtonBase" onclick="faceButton(3)">
-                    <div><img src="" id="faceButton3"></div>
-                </button>
+        <div id="charaWindow" class="CharaMenu hidden">
+            <div class="charaWinNameBase">
+                <h2 id="charaWinName" class=""></h2>
+                <img src="./images/UIバナー2.png" class="UIBanner2">
             </div>
+
+            <img src="" id="charaWinImg" class="observer-target">
+            <div id="charaWinMain" class="">
+                <p id="charaText"></p>
+            </div>
+            <div class="StatusWin">
+                <li id="forceText"></li>
+                <li id="CountryText"></li>
+                <li id="raceText"></li>
+                <li id="jobText"></li>
+            </div>
+            <button id="face1" class="faceButtonBase " onclick="faceButton(1)">
+                <div><img src="" id="faceButton1"></div>
+            </button>
+            <button id="face2" class="faceButtonBase" onclick="faceButton(2)">
+                <div><img src="" id="faceButton2"></div>
+            </button>
+            <button id="face3" class="faceButtonBase" onclick="faceButton(3)">
+                <div><img src="" id="faceButton3"></div>
+            </button>
+        </div>
     </main>
     <script src="./js/header.js"></script>
     <script>
