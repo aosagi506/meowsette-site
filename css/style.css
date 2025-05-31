@@ -6,7 +6,8 @@ body {
     width: 100%;
     background-color: rgb(255, 218, 176);
     overflow-x: hidden;
-    padding-top: 40px;
+    padding-top: 34px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body::before,
@@ -118,6 +119,13 @@ p {
     width: 850px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.spec h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 2px 2px white;
 }
 
 .Header_menu {
@@ -460,7 +468,9 @@ p {
     left: 38%;
 }
 
-
+#infoCharacter {
+    width: 200px;
+}
 
 
 #infoBox {
@@ -918,6 +928,7 @@ p {
     top: 57%;
     left: 58%;
     z-index: 1;
+    overflow: hidden;
 }
 
 .charaWinNameBase {
@@ -1294,15 +1305,39 @@ p {
 
 @media screen and (max-width:599px) {
     .Container {
-        height: 100px;
+        border-top: 12px solid darkolivegreen;
+        border-bottom: 12px solid darkolivegreen;
+        height: 70px;
+    }
+
+    .Container2 {
+        border-top: 12px solid darkolivegreen;
+        border-bottom: 12px solid darkolivegreen;
     }
 
     .LogoImg {
-        width: 250px;
+        width: 200px;
     }
-    body{
-        padding-top: 75px;
+
+    body {
+        padding-top: 60px;
     }
+#hero{
+    height: 500px;
+}
+#hero h2{
+    font-size: 20px;
+}
+    #hero2 {
+        height: 500px;
+    }
+
+    #hero2 p{
+        margin: 15px;
+    }
+#hero2 h1{
+    font-size: 30px;
+}
     .menu-text {
         font-size: 15px;
     }
@@ -1312,9 +1347,13 @@ p {
     }
 
     .menu-icon {
-        top:1px;
+        top: 1px;
         width: 45px;
         height: auto;
+    }
+
+    .spec h2 {
+        font-size: 30px;
     }
 
     #charaWindow {
@@ -1327,17 +1366,19 @@ p {
 
     .spMenuButton {
         width: 50px;
-        top:20px;
+        top: 12px;
         right: 10px;
     }
+
     #spMenuVisible .spMenuButton {
-    top: 28px;
-}
-    .termContainer{
-        max-width: 80%;
-        height: 500px;
+        top: 24px;
     }
-    
+
+    .termContainer {
+        max-width: 90%;
+        height: 350px;
+    }
+
     .Header_menu {
         flex-direction: column;
         align-items: center;
@@ -1354,48 +1395,88 @@ p {
     }
 
     .spText {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .map-container {
-        max-width: 80%;
+        max-width: 90%;
     }
-    #infoContent2{
-        font-size: 25px;
-        top:30px;
+
+    .Country {
+        width: 180px;
     }
-    #infoContent{
-        font-size: 40px;
+
+    .Country button {
+        font-size: 12px;
     }
-    #infoContent2_2{
-        font-size: 20px;
+
+    #infoContent2 {
+        font-size: 10px;
+        top: 25px;
     }
-        #infoContent3{
-        font-size: 20px;
+
+    #infoContent {
+        font-size: 15px;
     }
-    #infoContent4{
+
+    #infoContent2_2 {
+        font-size: 10px;
+    }
+
+    #infoContent3 {
+        font-size: 10px;
+    }
+
+    #infoContent4 {
         position: relative;
-        top:10px;
+        top: 8px;
     }
+
+    #infoCharacter {
+        width: 120px;
+    }
+
+    .term-return {
+        top: -80px;
+        left: -120px;
+        transform: scaleX(-1) scale(0.15);
+    }
+
+    .term-return:hover {
+        transform: scaleX(-1) scale(0.16);
+    }
+
+    .term-return:active {
+        transform: scaleX(-1) scale(0.12);
+    }
+
     #infoBox {
         width: 75%;
         height: 70%;
     }
 
+    .term-title {
+        font-size: 18px;
+        top: 7px;
+        left: 30px;
+    }
+
     .term-button {
-        width: 300px;
+        width: 130px;
+        height: auto;
+        font-size: 11px;
     }
 
     .definition {
-        font-size: 20px;
+        font-size: 12px;
     }
 
     .term-chara-text {
-        font-size: 18px;
+        font-size: 11px;
     }
 
     #infoContent4 {
-        font-size: 25px;
+        font-size: 12px;
     }
 
     .spContainer {
@@ -1404,12 +1485,12 @@ p {
 
     .hero2Image2 {
         position: absolute;
-        left: 50%;
+        left: 40%;
     }
 
-
     .menu-item {
-        width: 60px;
+        width: 32px;
+        font-size: 12px;
     }
 
     .sp {
@@ -1429,7 +1510,7 @@ p {
     }
 
     .sideImg {
-        width:90px;
+        width: 90px;
     }
 
     .sidebar {
@@ -1437,7 +1518,7 @@ p {
         width: 100%;
         overflow-x: auto;
         height: 120px;
-        top: 100px;
+        top: 80px;
         overflow-y: hidden;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
@@ -1454,7 +1535,7 @@ p {
 
     .StatusWin {
         left: 15px;
-        top:45px;
+        top: 45px;
     }
 
     .StatusWin li {
@@ -1499,19 +1580,20 @@ p {
 
     #face1 {
         width: 55px;
-left: 43%;
+        left: 43%;
+        top:3%;
     }
 
     #face2 {
         width: 55px;
         left: 52%;
-        top:9%;
+        top: 12%;
     }
 
     #face3 {
         width: 55px;
         left: 43%;
-        top:18%;
+        top: 21%;
     }
 
     #charaWinImg {
