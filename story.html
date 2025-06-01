@@ -45,11 +45,11 @@
                 <div class="Country fle"><button onclick="showInfo('fle',event);">フレクタリア帝国</button></div>
                 <div class="Country habi"><button onclick="showInfo('habi',event);">ハビラ帝国</button></div>
                 <div class="Country vix"><button onclick="showInfo('vix',event);">ビクシニア王国</button></div>
-                <div id="infoBox" >
-                    <button onclick="hideInfo()"alt="閉じる">✕</button>
+                <div id="infoBox">
+                    <button onclick="hideInfo()" alt="閉じる">✕</button>
                     <p id="infoContent3"></p>
                     <p id="infoContent2"></p>
-                    <p id="infoContent" ></p>
+                    <p id="infoContent"></p>
                     <p id="infoContent2_2"></p>
                     <p id="infoContent4"></p>
                     <img src="" id="infoCharacter" alt="兵士">
@@ -101,14 +101,14 @@
                     <button class="term-button" data-term="GebK" onclick="showTerm()">GebK.</button>
                     <button class="term-button" data-term="Gew" onclick="showTerm()">Gew.</button>
                     <button class="term-button" data-term="Kar" onclick="showTerm()">Kar.</button>
-                    <button class="term-button" data-term="Lmg" onclick="showTerm()">Lmg.</button>
+                    <button class="term-button" data-term="LMG" onclick="showTerm()">LMG.</button>
                     <button class="term-button" data-term="MG" onclick="showTerm()">MG.</button>
                     <button class="term-button" data-term="MP" onclick="showTerm()">MP.</button>
                     <button class="term-button" data-term="P" onclick="showTerm()">P.</button>
                     <button class="term-button" data-term="PK" onclick="showTerm()">PK.</button>
                     <button class="term-button" data-term="R" onclick="showTerm()">R.</button>
-                    <button class="term-button" data-term="SG" onclick="showTerm()">SG.</button>
-                    <button class="term-button" data-term="ZF" onclick="showTerm()">/ZF</button>
+                    <button class="term-button" data-term="SF" onclick="showTerm()">SF.</button>
+                    <button class="term-button" data-term="ZF" onclick="showTerm()">ZF</button>
                 </div>
                 <div class="term-group " data-group="a">
                     <button class="term-button" data-term="esh" onclick="showTerm()">エシュター</button>
@@ -147,7 +147,7 @@
                     <div class="term-title">
                         <h3>FK.</h3>
                     </div>
-                    <img src="./images/FK_icon.png" class="term-icon">
+                    <img src="./images/FK_icon.webp" class="term-icon">
                     <div class="definition">
                         <p>FK.はFeldkanone（フェルトカノーネ）の略称であり、エシュタルベルク軍の兵器区分で"野砲"を意味する。<!--
                                 -->エシュタルベルク軍は機動性を重視した比較的小口径の大砲を野砲と定義しており、要塞砲などと比べると口径は控えめである。<!--
@@ -155,14 +155,14 @@
                     </div>
                     <div class="term-charaBase-Win">
                         <div class="term-charaBase">
-                            <img src="./images/Lahti.png" class="term-chara">
+                            <img src="./images/Lahti.webp" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「駐退機を備えた野砲は、我が国スワールランドが開発した新時代の兵器さ！<!--
                                 -->連射が効くから"速射砲"とも呼ぶんだよ」</p>
                             </div>
                         </div>
                         <div class="term-charaBase">
-                            <img src="./images/Musette.png" class="term-chara">
+                            <img src="./images/Musette.webp" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「我がエシュタルベルクのFK.1もスワールランド製だな」</p>
                             </div>
@@ -175,7 +175,7 @@
                     <div class="term-title">
                         <h3>GebK.</h3>
                     </div>
-                    <img src="./images/GebK_icon.png" class="term-icon">
+                    <img src="./images/GebK_icon.webp" class="term-icon">
                     <div class="definition">
                         <p>GebK.はGebirgskanone（ゲビルクスカノーネ）の略称であり、エシュタルベルク軍の兵器区分で"山砲"を意味する。<!--
                                 -->山砲とは山岳地帯で運用する事を目的とした大砲であり、小型・軽量で分解して運搬することが容易という特徴がある。<!--
@@ -183,14 +183,14 @@
                     </div>
                     <div class="term-charaBase-Win">
                         <div class="term-charaBase">
-                            <img src="./images/Pino.png" alt="ピーノ" class="term-chara">
+                            <img src="./images/Pino.webp" alt="ピーノ" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「山砲を装備している時は取り回しの良い騎兵銃が相性良いんだぜ！」</p><!--
                                 -->
                             </div>
                         </div>
                         <div class="term-charaBase">
-                            <img src="./images/Musette.png" alt="ミュゼット" class="term-chara">
+                            <img src="./images/Musette.webp" alt="ミュゼット" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「我が国の山岳兵もルーマンケルピッツと同じ山砲を装備しているな」</p><!--
                                 -->
@@ -203,7 +203,7 @@
                     <div class="term-title">
                         <h3>Gew.</h3>
                     </div>
-                    <img src="./images/GewIcon.png" alt="歩兵銃" class="term-icon">
+                    <img src="./images/GewIcon.webp" alt="歩兵銃" class="term-icon">
                     <div class="definition">
                         <p>Gew.はGewehr（ゲヴェーア）の略称であり、エシュタルベルク軍の兵器区分で"歩兵銃"を意味する。<!--
                                 -->高威力・長射程・確実な動作、そして誰でも扱える整備性が求められる基本装備である。構造は主に手動装填式であり5～10発の弾薬が装填可能な連発銃だが、<!--
@@ -211,13 +211,13 @@
                     </div>
                     <div class="term-charaBase-Win">
                         <div class="term-charaBase">
-                            <img src="./images/Musette.png" alt="ミュゼット" class="term-chara">
+                            <img src="./images/Musette.webp" alt="ミュゼット" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「歩兵隊にとって大事な武器だ！やはり威力を高めねばな！」</p>
                             </div>
                         </div>
                         <div class="term-charaBase">
-                            <img src="./images/Craine.png" alt="クレイン" class="term-chara">
+                            <img src="./images/Craine.webp" alt="クレイン" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「強いだけの武器は良い兵器に成り得ないってスタンリーさん言ってましたよ」</p>
                             </div>
@@ -230,7 +230,7 @@
                     <div class="term-title">
                         <h3>Kar.</h3>
                     </div>
-                    <img src="./images/Kar_icon.png" alt="騎兵銃" class="term-icon">
+                    <img src="./images/Kar_icon.webp" alt="騎兵銃" class="term-icon">
                     <div class="definition">
                         <p>Kar.はKarabiner（カラビナー）の略称であり、エシュタルベルク軍の兵器区分で"騎兵銃"を意味する。<!--
                                 -->馬上で扱いやすいよう、全長が短めに作られた小銃である。基本的に既存の歩兵銃を改造したものが多い。<!--
@@ -238,14 +238,14 @@
                     </div>
                     <div class="term-charaBase-Win">
                         <div class="term-charaBase">
-                            <img src="./images/Erik.png" alt="エリク" class="term-chara">
+                            <img src="./images/Erik.webp" alt="エリク" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「ボルトハンドルが曲げられたり、負い紐が側面に付いたり、<!--
                                 -->引っ掛かりを極力無くしてあるのさ！」</p>
                             </div>
                         </div>
                         <div class="term-charaBase">
-                            <img src="./images/Lahti.png" alt="ラティ" class="term-chara">
+                            <img src="./images/Lahti.webp" alt="ラティ" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「アタシら砲兵も使ってるけど、歩兵銃を簡略化した物だから<!--
                                 -->ちょっと使いづらいんだよね…」</p>
@@ -253,31 +253,89 @@
                         </div>
                     </div>
                 </div>
-                <div class="term" data-term="PK" style="display: none;">
+                <div class="term" data-term="LMG" style="display: none;">
                     <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
                             alt="戻る"></button>
                     <div class="term-title">
-                        <h3>PK.</h3>
+                        <h3>LMG.</h3>
                     </div>
-                    <img src="./images/PK_icon.png" alt="ピストルカービン" class="term-icon">
+                    <img src="./images/LMG_icon.webp" alt="軽機関銃" class="term-icon">
                     <div class="definition">
-                        <p>PK.はPistolenkarabiner（ピストレンカラビナー）の略称であり、エシュタルベルク軍の兵器区分で"ピストルカービン"を意味する。<!--
-                                -->エシュタルベルク軍では、ピストル弾またはそれに準ずる小型の弾薬を使用する小銃と定義されており、短機関銃は含まれず、ピストルの発展型とは限られない。<!--
-                                -->主に衛生兵や偵察兵などの自衛用として支給されている。</p>
+                        <p>LMG.はLeichtesMaschinengewehr（ライヒテスマシーネンゲヴェーア）の略称であり、エシュタルベルク軍の兵器区分で"軽機関銃"を意味する。<!--
+                                -->銃架に装着して使用することを前提とした重機関銃と異なり、兵士個人で運用できるよう小型軽量に設計された機関銃である。<!--
+                                -->基本的に重機関銃とは運用する兵科が異なる。</p>
                     </div>
                     <div class="term-charaBase-Win">
                         <div class="term-charaBase">
-                            <img src="./images/Musette.png" alt="ミュゼット" class="term-chara">
+                            <img src="./images/Elma.webp" alt="エルマ" class="term-chara">
                             <div class="term-chara-text">
-                                <p>「ピストル弾を使用しているから衛生兵のような非戦闘員でも<!--
-                                -->撃ちやすいと評判だな」</p>
+                                <p>「こちらにも軽機関銃を回せないのか？<!--
+                                -->水冷機関銃は重すぎる」</p>
                             </div>
                         </div>
                         <div class="term-charaBase">
-                            <img src="./images/Craine.png" alt="クレイン" class="term-chara">
+                            <img src="./images/Musette.webp" alt="ミュゼット" class="term-chara">
                             <div class="term-chara-text">
-                                <p>「自動装填式は構造が複雑なので、<!--
-                                -->この子の整備は私少し苦手です…」</p>
+                                <p>「軽機関銃は歩兵科のものだ。そっちには回せん！<!--
+                                -->」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="term" data-term="MG" style="display: none;">
+                    <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
+                            alt="戻る"></button>
+                    <div class="term-title">
+                        <h3>MG.</h3>
+                    </div>
+                    <img src="./images/MG_icon.webp" alt="重機関銃" class="term-icon">
+                    <div class="definition">
+                        <p>MG.はMaschinengewehr（マシーネンゲヴェーア）の略称であり、エシュタルベルク軍の兵器区分で"銃機関銃"を意味する。<!--
+                                -->銃架に設置し、複数人で運用する大型の機関銃。射撃継続を重視して水冷バレルを装備し、給弾方式も弾倉ではなく弾帯である事が多い。<!--
+                                -->現代の戦場の中核を担う兵器である。</p>
+                    </div>
+                    <div class="term-charaBase-Win">
+                        <div class="term-charaBase">
+                            <img src="./images/Elma.webp" alt="エルマ" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「部隊の展開速度を鍛えろ。歩兵の援護が我らの役目だ<!--
+                                -->」</p>
+                            </div>
+                        </div>
+                        <div class="term-charaBase">
+                            <img src="./images/Musette.webp" alt="ミュゼット" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「機関銃が戦況を左右すると言っても過言ではないな<!--
+                                -->」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="term" data-term="MP" style="display: none;">
+                    <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
+                            alt="戻る"></button>
+                    <div class="term-title">
+                        <h3>MP.</h3>
+                    </div>
+                    <img src="./images/MP_icon.webp" alt="短機関銃" class="term-icon">
+                    <div class="definition">
+                        <p>MP.はMaschinenpistole（マシーネンピストーレ）の略称であり、エシュタルベルク軍の兵器区分で"短機関銃"を意味する。<!--
+                                -->小銃弾ではなく拳銃弾を使用する小型の機関銃。名前は似ているが、軽機関銃・重機関銃とは役割が全く異なる。<!--
+                                -->最新鋭の兵器であり、各国はその運用法について模索している段階である。</p>
+                    </div>
+                    <div class="term-charaBase-Win">
+                        <div class="term-charaBase">
+                            <img src="./images/Baird.webp" alt="ベアード" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「反動が小さく、とても扱いやすい銃ですね！新設された我ら突撃兵部隊の他に<!--
+                                -->山岳部隊でも運用しているようです」</p>
+                            </div>
+                        </div>
+                        <div class="term-charaBase">
+                            <img src="./images/Musette.webp" alt="ミュゼット" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「名前は似ているが、他の機関銃と違って火力支援は行えない。<!--
+                                -->飽くまでも近距離武器として割り切らねばな」</p>
                             </div>
                         </div>
                     </div>
@@ -288,7 +346,7 @@
                     <div class="term-title">
                         <h3>PK.</h3>
                     </div>
-                    <img src="./images/PK_icon.png" alt="ピストルカービン" class="term-icon">
+                    <img src="./images/PK_icon.webp" alt="ピストルカービン" class="term-icon">
                     <div class="definition">
                         <p>PK.はPistolenkarabiner（ピストレンカラビナー）の略称であり、エシュタルベルク軍の兵器区分で"ピストルカービン"を意味する。<!--
                                 -->エシュタルベルク軍では、ピストル弾またはそれに準ずる小型の弾薬を使用する小銃と定義されており、短機関銃は含まれず、ピストルの発展型とは限られない。<!--
@@ -296,17 +354,75 @@
                     </div>
                     <div class="term-charaBase-Win">
                         <div class="term-charaBase">
-                            <img src="./images/Musette.png" alt="ミュゼット" class="term-chara">
+                            <img src="./images/Musette.webp" alt="ミュゼット" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「ピストル弾を使用しているから衛生兵のような非戦闘員でも<!--
                                 -->撃ちやすいと評判だな」</p>
                             </div>
                         </div>
                         <div class="term-charaBase">
-                            <img src="./images/Craine.png" alt="クレイン" class="term-chara">
+                            <img src="./images/Craine.webp" alt="クレイン" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「自動装填式は構造が複雑なので、<!--
                                 -->この子の整備は私少し苦手です…」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="term" data-term="P" style="display: none;">
+                    <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
+                            alt="戻る"></button>
+                    <div class="term-title">
+                        <h3>P.</h3>
+                    </div>
+                    <img src="./images/P_icon.webp" alt="ピストル" class="term-icon">
+                    <div class="definition">
+                        <p>P.はPistole（ピストーレ）の略称であり、エシュタルベルク軍の兵器区分で"ピストル"を意味する。<!--
+                                -->大きく別けて、信頼性の高い旧来の"リボルバー式"と、自動で弾薬を装填し自動でハンマーを起こす"自動式"の二系統が存在する。<!--
+                                -->歩兵が装備することは無く、主に機関銃部隊の副武装や士官の護身用として配備されている。</p>
+                    </div>
+                    <div class="term-charaBase-Win">
+                        <div class="term-charaBase">
+                            <img src="./images/Musette.webp" alt="ミュゼット" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「我が国のP.1は、初の国産自動式ピストルだ。<!--
+                                -->優雅な外観が人気だが、旧式故に使いづらいな」</p>
+                            </div>
+                        </div>
+                        <div class="term-charaBase">
+                            <img src="./images/Birdner.webp" alt="バードナー" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「将校は私物のピストルを装備している方も多い。<!--
+                                -->ミュゼットも新調したらどうだ？」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="term" data-term="SF" style="display: none;">
+                    <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
+                            alt="戻る"></button>
+                    <div class="term-title">
+                        <h3>SF.</h3>
+                    </div>
+                    <img src="./images/SF_icon.webp" alt="散弾銃" class="term-icon">
+                    <div class="definition">
+                        <p>SF.はSchrotflinte（シュロットフリンテ）の略称であり、エシュタルベルク軍の兵器区分で"散弾銃"を意味する。<!--
+                                -->エシュタルベルクは散弾銃を制式兵器としていないが、主に数の足りない短機関銃の補完として、鹵獲した散弾銃をこの区分で使用することもある。<!--
+                                -->二連式やレバーアクション式、自動式など様々な方式がある。</p>
+                    </div>
+                    <div class="term-charaBase-Win">
+                        <div class="term-charaBase">
+                            <img src="./images/Baird.png" alt="ベアード" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「見てくださいミュゼットさん！この鹵獲した二連式散弾銃、型番が全部違いますよ<!--
+                                -->」</p>
+                            </div>
+                        </div>
+                        <div class="term-charaBase">
+                            <img src="./images/Musette.png" alt="ミュゼット" class="term-chara">
+                            <div class="term-chara-text">
+                                <p>「徴用した猟銃か…？フレクタリアには短機関銃が足りないと見えるな<!--
+                                -->」</p>
                             </div>
                         </div>
                     </div>
@@ -315,24 +431,24 @@
                     <button class="term-return" onclick="goBackList('az')"><img src="./images/矢印赤.png"
                             alt="戻る"></button>
                     <div class="term-title">
-                        <h3>/ZF</h3>
+                        <h3>ZF</h3>
                     </div>
-                    <img src="./images/ZF_icon.png" class="term-icon">
+                    <img src="./images/ZF_icon.webp" class="term-icon">
                     <div class="definition">
                         <p>ZFはZielfernrohr（ツィールフェルンローア）の略称であり、望遠照準器（ライフルスコープ）を意味する。<!--
                                 -->エシュタルベルク軍はスコープを搭載した小銃を狙撃銃として運用していなかったが、同盟国であるルーマンケルピッツの要請で<!--
-                                -->応急的に正式名称が整備された。例として「Gew.1/ZF」は「スコープ搭載Gew.1狙撃銃」を意味する。</p>
+                                -->応急的に制式名称が整備された。例として「Gew.1/ZF」は「スコープ搭載Gew.1狙撃銃」を意味する。</p>
                     </div>
                     <div class="term-charaBase-Win">
                         <div class="term-charaBase">
-                            <img src="./images/Beryl.png" alt="ベリル" class="term-chara">
+                            <img src="./images/Beryl.webp" alt="ベリル" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「あまり…いじらないで…<!--
                                 -->照準の調整…大変なので…」</p>
                             </div>
                         </div>
                         <div class="term-charaBase">
-                            <img src="./images/Musette.png" alt="ミュゼット" class="term-chara">
+                            <img src="./images/Musette.webp" alt="ミュゼット" class="term-chara">
                             <div class="term-chara-text">
                                 <p>「小銃にこんな精密機器を乗っけるのか…？<!--
                                 -->」</p>
@@ -384,20 +500,20 @@
                     vix: "フレクタリア連合"
                 }
                 const descriptions4 = {
-                    esh: `ネコ型の獣人「エシュター」が暮らす小さな山岳国家。<br/>国の規模に対して軍事力が高く、自国生産の兵器が多い。
+                    esh: `ネコ型の獣人「エシュター」が暮らす小さな山岳国家。国の規模に対して軍事力が高く、自国生産の兵器が多い。
                     過去の戦争でルーマンケルピッツと対峙し、その際はベルッセンの後ろ盾に助けられた。軍事力の高さもその戦争の名残である。現在は両者とも切り離せないパートナー。現国王は国民人気が高い。`,
-                    swa: `ウサギ型の獣人「ドワーフ」が暮らす、工業の国。<br/>その工業力の高さからフレクタリアに狙われており、領土内で戦闘が続いてる。
+                    swa: `ウサギ型の獣人「ドワーフ」が暮らす、工業の国。その工業力の高さからフレクタリアに狙われており、領土内で戦闘が続いてる。
                     この地方では珍しい共和制の大国であり、自由が尊重される傾向がある。多くの国に兵器を輸出しており、防壁同盟だけでなくフレクタリア連合側も鹵獲、コピーして使用している。`,
-                    ruman: `ヤギのような角を持つ種族「ムフロン」が暮らす国。<br/>強大な海軍を有する「ルーマン」と、難攻不落の山岳国家「ケルピッツ」から成る連邦国家。
+                    ruman: `ヤギのような角を持つ種族「ムフロン」が暮らす国。強大な海軍を有する「ルーマン」と、難攻不落の山岳国家「ケルピッツ」から成る連邦国家。
                     屈指の大国であり、対フレクタリア軍事同盟「防壁同盟」の中心国となっている。しかし、過去に大陸全土を巻き込んだ侵略戦争を起こしており、周辺国からの不信感は拭えない。`,
-                    ber: `古くから翼竜の産地として知られている、軍事国家。<br/>翼竜の騎兵「航空騎兵」を使い国土を広げた歴史から、現在でも大国として君臨している。
+                    ber: `古くから翼竜の産地として知られている、軍事国家。翼竜の騎兵「航空騎兵」を使い国土を広げた歴史から、現在でも大国として君臨している。
                     過去にルーマンケルピッツと大規模な戦争を起こしており、この両者は現在でも溝が深い。港を求めて隣国に圧力をかけているが、ルーマンケルピッツの策略に阻止されている。`,
-                    fle: `戦争の元凶であり、フレクタリア連合の中心国。<br/>エシュタルベルクと大差のない小国だが、現皇帝が即位してからは軍拡の一途を辿っている。
+                    fle: `戦争の元凶であり、フレクタリア連合の中心国。エシュタルベルクと大差のない小国だが、現皇帝が即位してからは軍拡の一途を辿っている。
                     いわゆる“普通の人間”と呼ばれる種族「ノイ」の国だが、様々な種族を引き入れ、戦力としている。小国故の兵器不足から、他国兵器も多く鹵獲し運用している。`,
-                    habi: `大陸西部の乾燥地帯に位置する国。ライオン型の原始的な種族「レオ」が多く暮らしている。<br/>海軍が強力な国として知られ、ルーマンケルピッツとの衝突が多い歴史がある。
+                    habi: `大陸西部の乾燥地帯に位置する国。ライオン型の原始的な種族「レオ」が多く暮らしている。海軍が強力な国として知られ、ルーマンケルピッツとの衝突が多い歴史がある。
                     フレクタリアとは仮想敵国の関係だったが、現在は利害の一致で軍事同盟を結んでいる。`,
-                    vix: `ベルッセンと並ぶ航空騎兵の国。<br/>フレクタリア・ハビラ連合軍に攻め落とされ、現在はフレクタリア連合の一国となっている。
-                    他国と比べて伝統的な文化を重んじる傾向にあり、軍装や装備などに現れている。伝統的な歩兵文化が色濃く残っており、歩兵が刀を装備することは他の国では見られない特徴。`
+                    vix: `ベルッセンと並ぶ航空騎兵の国。フレクタリア・ハビラ連合軍に攻め落とされ、現在はフレクタリア連合の一国となっている。
+                    その際に王族が粛清されているが、現在はフレクタリアから遣わされた高官が国王として国を統治しており、王国を名乗り続けている。他国と比べて伝統的な文化を重んじる傾向にある。`
                 }
                 const character = {
                     esh: "./images/エシュタルベルク兵.png",
@@ -551,7 +667,7 @@
                     targetTerm.style.display = 'flex';
                 }
             }
-            
+
         </script>
         <script src="./js/header.js"></script>
     </main>

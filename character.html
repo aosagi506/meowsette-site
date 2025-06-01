@@ -88,6 +88,26 @@
                                 <img src="./images/derwent_icon.png" alt="ダーウェント" class="sideImg">
                             </button>
                         </li>
+                        <li>
+                            <button class="sideButton" onclick="showCharaWindow('stanley',event)">
+                                <img src="./images/stanley_icon.png" alt="スタンリー" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton" onclick="showCharaWindow('martlet',event)">
+                                <img src="./images/martlet_icon.png" alt="マートレット" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton" onclick="showCharaWindow('viggen',event)">
+                                <img src="./images/viggen_icon.png" alt="ヴィゲン" class="sideImg">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="sideButton" onclick="showCharaWindow('emperor',event)">
+                                <img src="./images/emperor_icon.png" alt="フレクタリア皇帝" class="sideImg">
+                            </button>
+                        </li>
                     </ul>
                 </nav>
             </aside>
@@ -172,6 +192,30 @@
                         <div class="bannerText">ダーウェント</div>
                     </div>
                 </button>
+                <button onclick="showCharaWindow('stanley',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/stanley_charabanner.jpg" alt="スタンリー"
+                            class="bannerImg">
+                        <div class="bannerText">スタンリー</div>
+                    </div>
+                </button>
+                </button>
+                <button onclick="showCharaWindow('martlet',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/martlet_charabanner.jpg" alt="マートレット"
+                            class="bannerImg">
+                        <div class="bannerText">マートレット </div>
+                    </div>
+                </button>
+                </button>
+                <button onclick="showCharaWindow('viggen',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/viggen_charabanner.jpg" alt="ヴィゲン" class="bannerImg">
+                        <div class="bannerText">ヴィゲン</div>
+                    </div>
+                </button>
+                              <button onclick="showCharaWindow('emperor',event)" class="charaBanner">
+                    <div class="bannerWrapper"><img src="./images/emperor_charabanner.jpg" alt="フレクタリア皇帝" class="bannerImg">
+                        <div class="bannerText">フレクタリア皇帝</div>
+                    </div>
+                </button>
             </div>
         </div>
         <div id="charaWindow" class="CharaMenu hidden">
@@ -236,7 +280,11 @@
                 avon: "エイヴォン",
                 nene: "ニーン",
                 griffon: "グリフォン",
-                derwent: "ダーウェント"
+                derwent: "ダーウェント",
+                stanley: "スタンリー",
+                martlet: "マートレット",
+                viggen: "ヴィゲン",
+                emperor: "フレクタリア皇帝"
             };
             const charaImg = {
                 musette: "./images/ミュゼット_立ち絵.webp",
@@ -252,7 +300,11 @@
                 avon: "./images/エイヴォン_立ち絵.webp",
                 nene: "./images/ニーン_立ち絵.webp",
                 griffon: "./images/グリフォン_立ち絵.webp",
-                derwent: "./images/ダーウェント_立ち絵.webp"
+                derwent: "./images/ダーウェント_立ち絵.webp",
+                stanley: "./images/スタンリー_立ち絵.webp",
+                martlet: "./images/マートレット_立ち絵.webp",
+                viggen: "./images/ヴィゲン_立ち絵.webp",
+                emperor: "./images/皇帝_立ち絵.webp"
             };
             const charaText = {
                 musette: `本作の主人公。歩兵隊を率いている、エシュタルベルクの軍人さん。責任感と正義感が強く、
@@ -262,9 +314,10 @@
                 crane: `エシュタルベルクの偵察部隊を率いる、魔法使いの少女。
                 ミュゼットの部下であり、副官を務めている。あまり緊張感がない。`,
                 erik: `エシュタルベルクの騎兵隊を率いる、若き士官。
-                プライドが高く、高飛車な性格。歩兵隊を軽視し、度々ミュゼットといさかいを起こす。`,
+                プライドが高く、高飛車な性格。騎兵隊を絶対視する反面歩兵隊を軽視し、度々ミュゼットといさかいを起こす。`,
                 baird: `新設された突撃兵部隊の士官。
-                成績優秀な優等生であり、部下からの信頼は厚い。実家はコイの養殖場を営んでいる。`,
+                成績優秀な優等生であり、部下からの信頼は厚い。士官は制帽を着用することが一般的な中、ベアードは士官学校時代の略帽を好んで着用しており、彼の現場主義が現れている。
+                実家はコイの養殖場を営んでいる。`,
                 elma: `機関銃部隊を率いる、黒猫の士官。
                 口数は少ないが、鋭い観察眼を持つ。ベアードとは幼馴染であり、よくパブにビールを飲みに行く。`,
                 pino: `ルーマン＝ケルピッツ所属の山岳兵。
@@ -277,14 +330,20 @@
                 を快く思っておらず、ピーノとは犬猿の仲。相棒の翼竜は「リーボ」という名前がついている。`,
                 lahti: `スワールランドの砲兵隊を率いる士官。
                 男勝りな性格で、周りを引っ張る姉御肌。スワールランドは古くからエシュタルベルクと同盟関係にあり、ミュゼットとは演習などで面識がある。`,
-                avon: `フレクタリアの将校。<br/>幼い頃から皇帝の側で仕えており、皇帝には兄のように慕われている。神経質な性格で、いつも不機嫌そうにしている。
+                avon: `フレクタリアの将校。幼い頃から皇帝の側で仕えており、皇帝には兄のように慕われている。神経質な性格で、いつも不機嫌そうにしている。
                 動物アレルギーがあり、獣人に近づくとくしゃみが止まらなくなる。エシュタルベルク人に対しては特にひどい。`,
                 nene: `スワールランドの将校。
                 噂だけで語られる、謎の多い工作部隊を率いている。`,
                 griffon: `ビクシニアの航空騎兵隊を率いる将校。
                 何故か仮面を装着しており、ミステリアスなエースとして敵味方の垣根を越えて知名度が高い。`,
                 derwent: `ハビラ海軍の若き将校。
-                ビクシニア侵攻時に名を轟かせ、他のハビラ高官からも一目置かれている。にこやかで礼儀正しいが、その言葉は辛辣。`
+                ビクシニア侵攻時に名を轟かせ、他のハビラ高官からも一目置かれている。にこやかで礼儀正しいが、その言葉は辛辣。`,
+                stanley: `ミュゼットの部下の整備係。ミュゼット隊の兵器の改良、研究を担当している。生粋の兵器オタクであり、
+                兵器のこととなるとあまり詳しくないミュゼットに楯突く困った人。`,
+                martlet: `ミュゼットの上官。ミュゼットの良い理解者ではあるが、日和見的な所があり、ミュゼットの行動力に押し負けることも多々ある。`,
+                viggen: `首都師団の司令官。フレクタリア情勢を眼前にして、防壁同盟に頼らない国家の存続を模索している。`,
+                emperor: `フレクタリアの若き皇帝。まだ幼さが残る年齢だが、彼の父親である先代皇帝が急逝してからは絶対君主として君臨している。
+                国内ではハビラから国を守ったと語り継がれる先々代フレクタリア皇帝にあやかり、“英雄の再来”と評価されている。`
             };
             const charaForce = {
                 musette: "勢力：防壁同盟",
@@ -300,7 +359,11 @@
                 avon: "勢力：フレクタリア連合",
                 nene: "勢力：防壁同盟",
                 griffon: "勢力：フレクタリア連合",
-                derwent: "勢力：フレクタリア連合"
+                derwent: "勢力：フレクタリア連合",
+                stanley: "勢力：防壁同盟",
+                martlet: "勢力：防壁同盟",
+                viggen: "勢力：防壁同盟",
+                emperor: "勢力：フレクタリア連合"
             };
             const charaCountry = {
                 musette: "国籍：エシュタルベルク王国",
@@ -316,7 +379,11 @@
                 avon: "国籍：フレクタリア帝国",
                 nene: "国籍：スワールランド共和国",
                 griffon: "国籍：ビクシニア王国",
-                derwent: "国籍：ハビラ帝国"
+                derwent: "国籍：ハビラ帝国",
+                stanley: "国籍：エシュタルベルク王国",
+                martlet: "国籍：エシュタルベルク王国",
+                viggen: "国籍：エシュタルベルク王国",
+                emperor:"国籍：フレクタリア帝国"
             };
             const charaRace = {
                 musette: "種族：ノイ ✕ エシュター",
@@ -332,7 +399,11 @@
                 avon: "種族：ノイ",
                 nene: "種族：ノイ ✕ ドワーフ",
                 griffon: "種族：ノイ",
-                derwent: "種族：レオ"
+                derwent: "種族：レオ",
+                stanley: "種族：エシュター",
+                martlet: "種族：エシュター",
+                viggen: "種族：ノイ",
+                emperor: "種族：ノイ"
             };
             const charaJob = {
                 musette: "兵科：歩兵",
@@ -348,7 +419,10 @@
                 avon: "",
                 nene: "",
                 griffon: "",
-                derwent: ""
+                derwent: "",
+                stanley: "",
+                martlet: "",
+                viggen: ""
             };
             const charaFace1 = {
                 musette: "./images/musette_icon1.png",
@@ -364,7 +438,11 @@
                 avon: "./images/avon_icon1.png",
                 nene: "",
                 griffon: "",
-                derwent: ""
+                derwent: "",
+                stanley: "",
+                martlet: "",
+                viggen: "",
+                emperor:""
             }
             const charaFace2 = {
                 musette: "./images/musette_icon2.png",
@@ -380,7 +458,11 @@
                 avon: "./images/avon_icon2.png",
                 nene: "",
                 griffon: "",
-                derwent: ""
+                derwent: "",
+                stanley: "",
+                martlet: "",
+                viggen: "",
+                emperor:""
             }
             const charaFace3 = {
                 musette: "./images/musette_icon3.png",
@@ -396,7 +478,11 @@
                 avon: "./images/avon_icon3.png",
                 nene: "",
                 griffon: "",
-                derwent: ""
+                derwent: "",
+                stanley: "",
+                martlet: "",
+                viggen: "",
+                emperor:""
             }
             charaWinImg.onload = () => {
                 charaWinImg.style.transform = 'translateX(-50)';
