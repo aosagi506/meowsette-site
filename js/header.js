@@ -11,8 +11,7 @@ fetch('header.html')
                 overlay.classList.add('loaded');
             }, 100);
         }
-    })
-    .catch(err => console.error('読み込みエラー', err));
+    }).catch(err => console.error('読み込みエラー', err));
 function spMenu() {
     document.getElementById('spMenuHidden').style.display = 'none';
     document.getElementById('spMenuVisible').style.display = 'block';
@@ -26,4 +25,7 @@ window.addEventListener('resize', () => {
         document.getElementById('spMenuHidden').style.display = '';
         document.getElementById('spMenuVisible').style.display = '';
     }
-})
+});
+function CharaPush(){
+    sessionStorage.setItem('modalOpen','false');
+}
