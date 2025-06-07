@@ -144,16 +144,19 @@ p {
     bottom: 4px;
 
 }
-.index-text1{
+
+.index-text1 {
     position: absolute;
+    width: 100%;
     left: 50%;
     bottom: -180px;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
     font-size: 40px;
     color: white;
     font-weight: bold;
     text-shadow: 2px 3px 3px rgb(219, 33, 0);
 }
+
 .LogoImg {
     width: 200px;
     transition: sfilter 0.2s ease;
@@ -1429,6 +1432,12 @@ p {
 
     .LogoImg {
         width: 200px;
+    }
+
+    .index-text1 {
+        font-size: 30px;
+
+        bottom: -170px;
     }
 
     body {
