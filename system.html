@@ -10,51 +10,579 @@
 </head>
 
 <body>
-    <div id="header"></div>
-    <div id="loadingOverlay"></div>
-    <script src="./js/header.js"></script>
-    <div id="hero4">
+    <main>
+        <div id="header"></div>
+        <div id="loadingOverlay"></div>
+        <script src="./js/header.js"></script>
+        <div id="hero4">
+            <div class="UIBanner1">
+                <h1 class="charaTitle1">―システム―</h1>
+                <img src="./images/UIバナー2.webp" class="UIBanner1Img">
+            </div>
+            <div class="SystemImg"><img src="images/システム9.webp" alt="ゲーム概要1"></div>
+
+            <div class="SystemText">
+                <p>『ミュゼットとネコ耳の歩兵隊』はクラシカルな四角マスのシミュレーションRPG。</p>
+                <p>シンプルながら奥深いシステムをご紹介！</p>
+            </div>
+            <div class="SystemImg"><img src="images/システム7.webp" alt="ゲーム概要2"></div>
+            <div class="SystemImg"><img src="images/システム6.webp" alt="ゲーム概要3"></div>
+            <div class="SystemImg"><img src="images/システム10.webp" alt="ゲーム概要4"></div>
+
+            <div class="UIBanner3">
+                <h2 class="SystemTytle">―リアルタイム戦闘―</h2>
+                <img src="./images/バナー1.webp" class="UIBanner3Img">
+            </div>
+            <div class="SystemImg"><img src="images/システム5.webp" alt="リアルタイム戦闘1"></div>
+            <div class="SystemText">
+                <p>戦闘シーンはリアルタイムで進行！</p>
+                <p>武器によって連射速度が異なり、敵ターン時の戦闘ではリロードが発生して不利になる。</p>
+                <p>戦闘開始時に「突撃」「散開」「防御」から隊形を選択し、それぞれ三すくみの関係となっている。</p>
+                <p>どちらかが「突撃」を選択した場合、サブ武器による接近戦が発生！</p>
+            </div>
+            <div class="SystemImg"><img src="images/システム8.webp" alt="リアルタイム戦闘2"></div>
+            <div class="SystemText">
+                <p>戦闘時にリアルタイムでスキルを発動する事が可能！</p>
+                <p>スキル発動に必要となるSPは戦闘で溜めることができるが、最大3回分までしか保持できないので、使い所が肝心。</p>
+            </div>
+            <div class="UIBanner3">
+                <h2 class="SystemTytle">―火力支援システム―</h2>
+                <img src="./images/バナー1.webp" class="UIBanner3Img">
+            </div>
+            <div class="SystemImg"><img src="images/システム11.webp" alt="火力支援システム1"></div>
+            <div class="SystemText">
+                <p>機関銃、山砲など、特定ユニットが隣接している時は戦闘時に援護射撃が受けられる。</p>
+                <p>援護射撃で弾幕を張ることで相手ユニットの命中率を下げるなど、様々な効果が発生。</p>
+                <p>戦場の中核を担うシステムであり、火力支援を使いこなすことが勝利への近道だ！</p>
+            </div>
+        </div>
         <div class="UIBanner1">
-            <h1 class="charaTitle1">―システム―</h1>
+            <h2 class="charaTitle1">―兵科紹介―</h2>
             <img src="./images/UIバナー2.webp" class="UIBanner1Img">
         </div>
-        <div class="SystemImg"><img src="images/システム9.webp" alt="ゲーム概要1"></div>
+        <div id="classSelect">
 
-        <div class="SystemText">
-            <p>『ミュゼットとネコ耳の歩兵隊』はクラシカルな四角マスのシミュレーションRPG。</p>
-            <p>シンプルながら奥深いシステムをご紹介！</p>
+            <button class="classButton" onclick="ClassSelect('hohei')"><img class="classImage" src="./images/歩兵.webp"
+                    alt="歩兵"></button>
+            <button class="classButton" onclick="ClassSelect('shienhei')"><img class="classImage"
+                    src="./images/支援兵.webp" alt="支援兵"></button>
+            <button class="classButton" onclick="ClassSelect('teisatsuhei')"><img class="classImage"
+                    src="./images/偵察兵.webp" alt="偵察兵"></button>
+            <button class="classButton" onclick="ClassSelect('eiseihei')"><img class="classImage"
+                    src="./images/衛生兵.webp" alt="衛生兵"></button>
+            <button class="classButton" onclick="ClassSelect('totsugekihei')"><img class="classImage"
+                    src="./images/突撃兵.webp" alt="突撃兵"></button>
+            <button class="classButton" onclick="ClassSelect('kikanzyuhei')"><img class="classImage"
+                    src="./images/機関銃兵.webp" alt="機関銃兵"></button>
+            <button class="classButton" onclick="ClassSelect('eihei')"><img class="classImage" src="./images/衛兵.webp"
+                    alt="衛兵"></button>
+            <button class="classButton" onclick="ClassSelect('kihei')"><img class="classImage" src="./images/騎兵.webp"
+                    alt="騎兵"></button>
+            <button class="classButton" onclick="ClassSelect('sangakuhei')"><img class="classImage"
+                    src="./images/山岳兵.webp" alt="山岳兵"></button>
+            <button class="classButton" onclick="ClassSelect('sogekihei')"><img class="classImage"
+                    src="./images/狙撃兵.webp" alt="狙撃兵"></button>
+            <button class="classButton" onclick="ClassSelect('koukukihei')"><img class="classImage"
+                    src="./images/航空騎兵.webp" alt="航空騎兵"></button>
+            <button class="classButton" onclick="ClassSelect('houhei')"><img class="classImage" src="./images/砲兵.webp"
+                    alt="砲兵"></button>
         </div>
-        <div class="SystemImg"><img src="images/システム7.webp" alt="ゲーム概要2"></div>
-        <div class="SystemImg"><img src="images/システム6.webp" alt="ゲーム概要3"></div>
-        <div class="SystemImg"><img src="images/システム10.webp" alt="ゲーム概要4"></div>
+        <div class="classWindow" dataClass="hohei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">歩兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：歩兵銃</p>
+                <p>副武装：スコップ、銃剣</p>
+                <p>兵士数：5人</p>
+            </div>
+            <div class="classText">
+                <p>最も基本的な戦闘ユニット。攻撃力と命中率の高い歩兵銃を装備し、1部隊の兵士数が多いため戦闘力が高い。<!--
+            -->銃剣とスコップの選択式であり、スコップ装備時のみ塹壕の建設や架橋、障害物の撤去などが可能となる。</p>
+            </div>
+            <div class="classChara"><img src="./images/歩兵_Gew1.webp" alt="歩兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('hohei','s1')"><img
+                                src="./images/システム1.webp" alt="歩兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('hienhei','s2')"><img
+                                src="./images/システム1.webp" alt="歩兵ゲーム画面2"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('hienhei','s3')"><img
+                                src="./images/システム1.webp" alt="歩兵ゲーム画面3"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="hohei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <div class="classWindow" dataClass="shienhei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">支援兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：軽機関銃</p>
+                <p>副武装：ピストル</p>
+                <p>兵士数：3人</p>
+            </div>
+            <div class="classText">
+                <p>火力支援が可能な歩兵ユニット。軽量な機関銃を装備し、支援射撃と直接戦闘を同時に行える。<!--
+            -->軽機関銃は火力支援の効果が薄いため、油断は禁物。</p>
+            </div>
+            <div class="classChara"><img src="./images/支援兵_Lmg1.webp" alt="支援兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('shienhei','s1')"><img
+                                src="./images/システム1.webp" alt="支援兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('shienhei','s2')"><img
+                                src="./images/システム1.webp" alt="支援兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('shienhei','s3')"><img
+                                src="./images/システム1.webp" alt="支援兵ゲーム画面1"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="hohei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <div class="classWindow" dataClass="teisatsuhei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">偵察兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：ピストルカービン</p>
+                <p>副武装：無し</p>
+                <p>兵士数：3人</p>
+            </div>
+            <div class="classText">
+                <p>戦闘に必要な情報を集める兵科。偵察範囲内での戦闘時、戦闘開始前に敵の隊形を確認することが出来る。<!--
+            --></p>
+            </div>
+            <div class="classChara"><img src="./images/偵察兵_PK1.webp" alt="偵察兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('teisatsuhei','s1')"><img
+                                src="./images/システム1.webp" alt="偵察兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('teisatsuhei','s2')"><img
+                                src="./images/システム1.webp" alt="偵察兵ゲーム画面2"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('teisatsuhei','s3')"><img
+                                src="./images/システム1.webp" alt="偵察兵ゲーム画面3"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="hohei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <div class="classWindow" dataClass="eiseihei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">衛生兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：ピストルカービン</p>
+                <p>副武装：無し</p>
+                <p>兵士数：3人</p>
+            </div>
+            <div class="classText">
+                <p>自軍ユニットの治療が可能なユニット。直接友軍を指定して治療する「大回復」と、ターン開始時に隣接するユニットを回復させる「小回復」がある。<!--
+            -->大回復は戦闘不能になった兵士も治療が可能。自分から攻撃を仕掛けることは出来ない。</p>
+            </div>
+            <div class="classChara"><img src="./images/衛生兵_PK1.webp" alt="衛生兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('eiseihei','s1')"><img
+                                src="./images/システム1.webp" alt="衛生兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('eiseihei','s2')"><img
+                                src="./images/システム1.webp" alt="衛生兵ゲーム画面2"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('eiseihei','s3')"><img
+                                src="./images/システム1.webp" alt="衛生兵ゲーム画面3"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="hohei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <div class="classWindow" dataClass="totsugekihei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">突撃兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：短機関銃、散弾銃</p>
+                <p>副武装：ピストル</p>
+                <p>兵士数：3人</p>
+            </div>
+            <div class="classText">
+                <p>接近戦が得意なユニット。トーチカのような防御陣地に対して効果が高い。<!--
+            -->装備が軽量のため、歩兵ユニットよりも移動範囲が広い。</p>
+            </div>
+            <div class="classChara"><img src="./images/突撃兵_MP1.webp" alt="突撃兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('totsugekihei','s1')"><img
+                                src="./images/システム1.webp" alt="突撃兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('totsugekihei','s2')"><img
+                                src="./images/システム1.webp" alt="突撃兵ゲーム画面2"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('totsugekihei','s3')"><img
+                                src="./images/システム1.webp" alt="突撃兵ゲーム画面3"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="totsugekihei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <div class="classWindow" dataClass="kikanzyuhei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">機関銃兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：重機関銃</p>
+                <p>副武装：ピストル</p>
+                <p>兵士数：2組</p>
+            </div>
+            <div class="classText">
+                <p>強力な火力支援が行えるユニット。自分から攻撃を仕掛けることは出来ないが、支援兵よりも効果の高い援護射撃が可能。<!--
+            -->機関銃1基につき、2名の兵士が運用している。</p>
+            </div>
+            <div class="classChara"><img src="./images/機関銃兵_MG1.webp" alt="機関銃兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('kikanzyuhei','s1')"><img
+                                src="./images/システム1.webp" alt="機関銃兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('kikanzyuhei','s2')"><img
+                                src="./images/システム1.webp" alt="機関銃兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('kikanzyuhei','s3')"><img
+                                src="./images/システム1.webp" alt="機関銃兵ゲーム画面1"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="hohei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <div class="classWindow" dataClass="eihei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">衛兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：騎兵銃</p>
+                <p>副武装：サーベル</p>
+                <p>兵士数：5人</p>
+            </div>
+            <div class="classText">
+                <p>クリティカル攻撃が発生するエリート歩兵。騎兵銃は歩兵銃よりも性能が低いが、取り回しが良くより素早く操作が行える。<!--
+            --></p>
+            </div>
+            <div class="classChara"><img src="./images/衛兵_Kar1.webp" alt="衛兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('eihei','s1')"><img
+                                src="./images/システム1.webp" alt="衛兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('eihei','s2')"><img
+                                src="./images/システム1.webp" alt="衛兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('eihei','s3')"><img
+                                src="./images/システム1.webp" alt="衛兵ゲーム画面1"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="hohei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <div class="classWindow" dataClass="kihei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">騎兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：騎兵銃、騎兵槍</p>
+                <p>副武装：サーベル</p>
+                <p>兵士数：3人</p>
+            </div>
+            <div class="classText">
+                <p>軍馬を駆り、機動性に優れたユニット。戦闘後に移動力が残っている場合、再移動が行え一撃離脱な戦法が取れる。<!--
+            -->突撃専用の騎兵槍が装備可能。</p>
+            </div>
+            <div class="classChara"><img src="./images/騎兵_Kar1.webp" alt="騎兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('kihei','s1')"><img
+                                src="./images/システム1.webp" alt="騎兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('kihei','s2')"><img
+                                src="./images/システム1.webp" alt="騎兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('kihei','s3')"><img
+                                src="./images/システム1.webp" alt="騎兵ゲーム画面1"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="hohei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <div class="classWindow" dataClass="sangakuhei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">山岳兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：山砲</p>
+                <p>副武装：騎兵銃</p>
+                <p>兵士数：2組</p>
+            </div>
+            <div class="classText">
+                <p>山砲による長距離攻撃と火力支援が得意なユニット。代わりに接近戦に弱く、敵に隣接されると騎兵銃で応戦する。<!--
+            -->山岳地帯での行動に特化しており、崖を素早く上り下り出来る。</p>
+            </div>
+            <div class="classChara"><img src="./images/山岳兵_GK1.webp" alt="山岳兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('sangakuhei','s1')"><img
+                                src="./images/システム1.webp" alt="山岳兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('sangakuhei','s2')"><img
+                                src="./images/システム1.webp" alt="山岳兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('sangakuhei','s3')"><img
+                                src="./images/システム1.webp" alt="山岳兵ゲーム画面1"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="hohei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <div class="classWindow" dataClass="sogekihei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">狙撃兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：狙撃銃</p>
+                <p>副武装：ピストル</p>
+                <p>兵士数：2組</p>
+            </div>
+            <div class="classText">
+                <p>スコープを乗せた小銃で遠距離攻撃が可能なユニット。隣接時も難なく戦闘をこなせるが、遠距離攻撃時はクリティカル攻撃が発生する。<!--
+            -->山岳兵の様に山岳地帯での行動が得意。</p>
+            </div>
+            <div class="classChara"><img src="./images/狙撃兵_Gew1ZF.webp" alt="狙撃兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('sogekihei','s1')"><img
+                                src="./images/システム1.webp" alt="狙撃兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('sogekihei','s2')"><img
+                                src="./images/システム1.webp" alt="狙撃兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('sogekihei','s3')"><img
+                                src="./images/システム1.webp" alt="狙撃兵ゲーム画面1"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="hohei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <div class="classWindow" dataClass="koukukihei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">航空騎兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：ロケット弾、航空爆弾</p>
+                <p>副武装：ピストル</p>
+                <p>兵士数：2人</p>
+            </div>
+            <div class="classText">
+                <p>軍用竜を駆り、上空から爆撃を行う兵科。高高度飛行ユニットであり、地形に左右されず行動が出来る。直接攻撃の他、航空支援も可能。<!--
+            -->航空爆弾は強力な航空支援が行える火力支援専用の武器であり、攻撃を受けると無防備になる。</p>
+            </div>
+            <div class="classChara"><img src="./images/航空騎兵_R1M.webp" alt="航空騎兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('koukukihei','s1')"><img
+                                src="./images/システム1.webp" alt="航空騎兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('koukukihei','s2')"><img
+                                src="./images/システム1.webp" alt="航空騎兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('koukukihei','s3')"><img
+                                src="./images/システム1.webp" alt="航空騎兵ゲーム画面1"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="koukukihei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <div class="classWindow" dataClass="houhei" style="display: none;">
+            <div class="classWinNameBase">
+                <h3 id="charaWinName" class="">砲兵</h3>
+                <img src="./images/UIバナー2.webp" class="UIBanner2">
+            </div>
+            <button class="hiddenButton" onclick="hideInfo()" alt="閉じる">✕</button>
+            <div class="weaponText">
+                <p>主武装：野砲</p>
+                <p>副武装：騎兵銃</p>
+                <p>兵士数：4人</p>
+            </div>
+            <div class="classText">
+                <p>野砲による超長距離攻撃が可能なユニット。砲撃は兵士数の多い歩兵ユニットに有効な攻撃だが、市街地では遮蔽物が多いので射線が通らないこともある。<!--
+            -->接近されると騎兵銃で応戦する。</p>
+            </div>
+            <div class="classChara"><img src="./images/砲兵_FK1.webp" alt="砲兵"></div>
+            <div class="classScreenshotBase">
+                <ul>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('houhei','s1')"><img
+                                src="./images/システム1.webp" alt="砲兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('houhei','s2')"><img
+                                src="./images/システム1.webp" alt="砲兵ゲーム画面1"></button>
+                    </li>
+                    <li>
+                        <button class="classScreenshot" onclick="ScreenshotClick('houhei','s3')"><img
+                                src="./images/システム1.webp" alt="砲兵ゲーム画面1"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="classScreenshot2Base">
+                <img class="hohei s1 classScreenshot2" src="./images/システム1.webp">
+            </div>
+        </div>
+        <script>
+            let openWin = false;
+            let openWin2 = false;
+            function hideInfo() {
+                document.body.style.overflow = 'auto';
+                document.querySelectorAll('.classWindow').forEach(a => {
+                    a.style.display = 'none';
+                    openWin = false;
+                    openWin2 = false;
+                });
+            }
+            function hideInfo2() {
+                document.querySelectorAll('.classScreenshot2').forEach(a => {
+                    a.style.display = 'none';
+                    openWin2 = false;
+                });
+            }
+            document.addEventListener('click', function (event) {
+                const infoBox = Array.from(document.querySelectorAll('.classWindow')).find(win => win.style.display === 'block');
+                if (infoBox && !infoBox.contains(event.target) && openWin) {
+                    if (!openWin2) {
+                        hideInfo();
+                    }
+                    hideInfo2();
+                }
+            });
+            document.querySelectorAll('.classScreenshot2').forEach(img => {
+                img.addEventListener('click', function (e) {
+                    if (openWin2) {
+                        hideInfo2();
+                    }
+                });
+            });
+            function ClassSelect(heika) {
+                if (!openWin && !openWin2) {
+                    const targetClass = document.querySelector(`.classWindow[dataClass="${heika}"]`);
+                    if (targetClass) {
+                        targetClass.style.display = 'block';
+                        document.body.style.overflow = 'hidden';
+                        if (!targetClass.hasAttribute('data-listener')) {
+                            targetClass.addEventListener('click', function (e) {
+                                e.stopPropagation();
+                            });
+                            targetClass.setAttribute('data-listener', 'true');
+                        }
+                    }
+                    setTimeout(() => {
+                        openWin = true;
+                    }, 50);
+                }
+            }
+            function ScreenshotClick(heika, num) {
+                const elements = document.querySelectorAll(`.${heika}.${num}.classScreenshot2`);
 
-        <div class="UIBanner3">
-            <h2 class="SystemTytle">―リアルタイム戦闘―</h2>
-            <img src="./images/バナー1.webp" class="UIBanner3Img">
-        </div>
-        <div class="SystemImg"><img src="images/システム5.webp" alt="リアルタイム戦闘1"></div>
-        <div class="SystemText">
-            <p>戦闘シーンはリアルタイムで進行！</p>
-            <p>武器によって連射速度が異なり、敵ターン時の戦闘ではリロードが発生して不利になる。</p>
-            <p>戦闘開始時に「突撃」「散開」「防御」から隊形を選択し、それぞれ三すくみの関係となっている。</p>
-            <p>どちらかが「突撃」を選択した場合、サブ武器による接近戦が発生！</p>
-        </div>
-        <div class="SystemImg"><img src="images/システム8.webp" alt="リアルタイム戦闘2"></div>
-        <div class="SystemText">
-            <p>戦闘時にリアルタイムでスキルを発動する事が可能！</p>
-            <p>スキル発動に必要となるSPは戦闘で溜めることができるが、最大3回分までしか保持できないので、使い所が肝心。</p>
-        </div>
-        <div class="UIBanner3">
-            <h2 class="SystemTytle">―火力支援システム―</h2>
-            <img src="./images/バナー1.webp" class="UIBanner3Img">
-        </div>
-        <div class="SystemImg"><img src="images/システム11.webp" alt="火力支援システム1"></div>
-        <div class="SystemText">
-            <p>機関銃、山砲など、特定ユニットが隣接している時は戦闘時に援護射撃が受けられる。</p>
-            <p>援護射撃で弾幕を張ることで相手ユニットの命中率を下げるなど、様々な効果が発生。</p>
-            <p>戦場の中核を担うシステムであり、火力支援を使いこなすことが勝利への近道だ！</p>
-        </div>
-    </div>
+                elements.forEach(el => {
+                    el.style.display = 'block';
+                });
+                setTimeout(() => {
+                    openWin2 = true;
+                }, 50);
+            }
+
+        </script>
+    </main>
 </body>
 
 </html>

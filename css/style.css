@@ -6,9 +6,10 @@ body {
     padding-top: 40px;
     width: 100%;
     background-color: rgb(255, 218, 176);
-    overflow-x: hidden;
-
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 body::before,
@@ -1185,6 +1186,7 @@ p {
 }
 
 .UIBanner3 {
+
     position: relative;
     margin: 0 auto;
     justify-content: center;
@@ -1198,6 +1200,161 @@ p {
     width: 300px;
     height: 80px;
     background-size: 100% 100%;
+}
+
+#classSelect {
+    width: 635px;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.classButton {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: none;
+    border: none;
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+.classButton img {
+    width: 300px;
+}
+
+.classButton :hover {
+    transform: scale(105%);
+}
+
+.classButton:active {
+    transform: scale(95%);
+}
+
+.classWindow {
+    z-index: 1000;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    width: 700px;
+    height: 450px;
+    background-color: #140501c4;
+    border: #cf9902 8px outset;
+    border-radius: 10px;
+}
+
+.classWinNameBase {
+    position: relative;
+    width: 300px;
+    height: 20px;
+}
+
+.hiddenButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: bold;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hiddenButton:hover {
+    color: rgb(182, 8, 8);
+}
+
+.classWinNameBase img {
+    width: 300px;
+}
+
+.weaponText {
+    position: absolute;
+    font-size: 18px;
+    color: #dad2cb;
+    left: 320px;
+    top: 0;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.classChara {
+    position: relative;
+    width: 300px;
+    left: 50px;
+    top: 50px;
+}
+
+.classChara img {
+    width: 300px;
+}
+
+.classScreenshot2Base {
+z-index: 2000;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    top: 0;
+    left: 50%;
+    width: 100%;
+}
+
+.classScreenshot2 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    cursor: zoom-out;
+}
+
+.classText {
+    position: absolute;
+    font-size: 17px;
+    width: 300px;
+    right: 50px;
+    top: 120px;
+    color: #dad2cb;
+    text-shadow: -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+.classScreenshotBase{
+    position: relative;
+}
+.classScreenshot:hover{
+    transform: scale(105%);
+}
+.classScreenshotBase ul {
+    display: flex;
+
+}
+
+.classScreenshotBase li {
+    list-style: none;
+
+}
+
+.classScreenshot {
+    position: relative;
+    bottom: 15px;
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: none;
+    border: none;
+    cursor:zoom-in;
+}
+
+.classScreenshot img {
+    width: 200px;
 }
 
 ::-webkit-scrollbar {
@@ -1403,6 +1560,18 @@ p {
     #charaWinImg {
         height: 100%;
         left: 50%;
+    }
+
+    #classSelect {
+        width: 420px;
+    }
+
+    .classButton {
+        width: 200px;
+    }
+
+    .classButton img {
+        width: 200px;
     }
 }
 
@@ -1795,5 +1964,66 @@ p {
 
     .SystemImg Img {
         width: 380px;
+    }
+
+    #classSelect {
+        width: 250px;
+    }
+
+    .classButton {
+        width: 250px;
+    }
+
+    .classButton img {
+        width: 250px;
+    }
+    .classWindow{
+        width: 400px;
+    }
+    .classWinNameBase{
+        width: 150px;
+    }
+    .classWinNameBase img{
+        width: 150px;
+    }
+    .classText{
+        right: 10px;
+        top:80px;
+        width: 180px;
+        font-size:13px;
+    }
+    .weaponText{
+        width: 250px;
+        left: 160px;
+        font-size: 13px;
+        top:3px;
+    }
+    .classChara{
+        width: 200px;
+        left: 0;
+        top:30px;
+    }
+    .classChara img{
+        width: 200px;
+    }
+    .classScreenshot{
+        width: 150px;
+    }
+    .classScreenshot img{
+        width: 150px;
+    }
+    .classScreenshotBase{
+        width: 350px;
+        box-sizing: border-box;
+        bottom: -30px;
+    }
+    .classScreenshotBase ul{
+        width: 350px;
+        flex-wrap:wrap;
+        gap :10px;
+    }
+    .classScreenshot2Base{
+        top: 0%;
+        left: 50%;
     }
 }
