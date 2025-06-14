@@ -10,6 +10,7 @@ body {
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 body::before,
@@ -1373,6 +1374,9 @@ z-index: 2000;
     border: 2px solid transparent;
     background-clip: padding-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 
 @keyframes bounce {
     0% {
