@@ -1630,7 +1630,7 @@ z-index: 2000;
     }
 
     #hero2 p {
-        margin: 15px;
+        margin: 8px;
     }
 
     #hero2 h1 {
@@ -1774,11 +1774,12 @@ z-index: 2000;
 
     #infoContent4 {
         position: relative;
-        top: 8px;
+        top: 3px;
+                font-size: 10px;
     }
 
     #infoCharacter {
-        width: 120px;
+        width: 90px;
     }
 
     .term-return {
@@ -1818,10 +1819,6 @@ z-index: 2000;
 
     .term-chara-text {
         font-size: 11px;
-    }
-
-    #infoContent4 {
-        font-size: 12px;
     }
 
     .spContainer {
