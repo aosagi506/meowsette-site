@@ -598,15 +598,28 @@
                     }, 50);
                 }
             }
+            let currentNumber = null;
             function ScreenshotClick(heika, num) {
                 const elements = document.querySelectorAll(`.${heika}.${num}.classScreenshot2`);
-
-                elements.forEach(el => {
-                    el.style.display = 'block';
+                const elements2 = document.querySelectorAll(`.${heika}.classScreenshot2`);
+                elements2.forEach(el => {
+                    el.style.display = 'none';
                 });
+                                    if (currentNumber !== num) {
+                elements.forEach(el => {
+
+                        el.style.display = 'block';
+                    }
+                );
                 setTimeout(() => {
                     openWin2 = true;
+
                 }, 50);
+                currentNumber = num;}
+                else{
+                    openWin2 = false;
+                    currentNumber = null;
+                }
             }
 
         </script>
