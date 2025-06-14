@@ -562,6 +562,7 @@
                 document.querySelectorAll('.classScreenshot2').forEach(a => {
                     a.style.display = 'none';
                     openWin2 = false;
+                    currentNumber = null;
                 });
             }
             document.addEventListener('click', function (event) {
@@ -605,18 +606,19 @@
                 elements2.forEach(el => {
                     el.style.display = 'none';
                 });
-                                    if (currentNumber !== num) {
-                elements.forEach(el => {
+                if (currentNumber !== num) {
+                    elements.forEach(el => {
 
                         el.style.display = 'block';
                     }
-                );
-                setTimeout(() => {
-                    openWin2 = true;
+                    );
+                    setTimeout(() => {
+                        openWin2 = true;
 
-                }, 50);
-                currentNumber = num;}
-                else{
+                    }, 50);
+                    currentNumber = num;
+                }
+                else {
                     openWin2 = false;
                     currentNumber = null;
                 }
