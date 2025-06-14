@@ -20,6 +20,7 @@ body::before,
 
 p {
     margin: 0;
+    line-height: 1.4;
 }
 
 .border1 {
@@ -1300,7 +1301,7 @@ p {
 }
 
 .classScreenshot2Base {
-z-index: 2000;
+    z-index: 2000;
     position: absolute;
     transform: translate(-50%, 50%);
     top: 0;
@@ -1328,12 +1329,15 @@ z-index: 2000;
         -1px 1px 0 black,
         1px 1px 0 black;
 }
-.classScreenshotBase{
+
+.classScreenshotBase {
     position: relative;
 }
-.classScreenshot:hover{
+
+.classScreenshot:hover {
     transform: scale(105%);
 }
+
 .classScreenshotBase ul {
     display: flex;
 
@@ -1352,7 +1356,7 @@ z-index: 2000;
     margin-right: 5px;
     background: none;
     border: none;
-    cursor:zoom-in;
+    cursor: zoom-in;
 }
 
 .classScreenshot img {
@@ -1738,7 +1742,7 @@ z-index: 2000;
 
     .habi {
         top: 35%;
-        width: 80px;
+        width: 90px;
         height: 45px;
     }
 
@@ -1774,7 +1778,7 @@ z-index: 2000;
     #infoContent4 {
         position: relative;
         top: 10px;
-                font-size: 10px;
+        font-size: 10px;
     }
 
     #infoCharacter {
@@ -1977,53 +1981,73 @@ z-index: 2000;
     .classButton img {
         width: 250px;
     }
-    .classWindow{
+
+    .classWindow {
         width: 400px;
     }
-    .classWinNameBase{
+
+    .classWinNameBase {
         width: 150px;
     }
-    .classWinNameBase img{
+
+    .classWinNameBase img {
         width: 150px;
     }
-    .classText{
+
+    .classText {
         right: 10px;
-        top:80px;
+        top: 80px;
         width: 180px;
-        font-size:13px;
+        font-size: 13px;
     }
-    .weaponText{
+
+    .weaponText {
         width: 250px;
         left: 160px;
         font-size: 13px;
-        top:3px;
+        top: 3px;
     }
-    .classChara{
+
+    .classChara {
         width: 200px;
         left: 0;
-        top:30px;
+        top: 30px;
     }
-    .classChara img{
+
+    .classChara img {
         width: 200px;
     }
-    .classScreenshot{
+
+    .classScreenshot {
         width: 150px;
     }
-    .classScreenshot img{
+
+    .classScreenshot img {
         width: 150px;
     }
-    .classScreenshotBase{
+
+    .classScreenshotBase {
         width: 350px;
         box-sizing: border-box;
         bottom: -30px;
     }
-    .classScreenshotBase ul{
+
+    .classScreenshotBase ul {
         width: 350px;
-        flex-wrap:wrap;
-        gap :10px;
+        flex-wrap: wrap;
+        gap: 10px;
     }
-    .classScreenshot2Base{
+
+    .classScreenshot2Base {
         top: 0%;
         left: 50%;
+    }
+
+    @media screen and (max-width: 400px) {
+        #charaWinImg {
+            height: 85%;
+            left: 40%;
+        }
+
     }
 }
